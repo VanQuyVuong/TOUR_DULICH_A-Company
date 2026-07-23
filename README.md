@@ -38,6 +38,9 @@ DPV-Travel-Project/
 ├── DPV.Mobile/            # Mobile App cho Khách hàng & HDV (React Native)
 ├── *.sql                  # Scripts khởi tạo CSDL và Seed Data ở thư mục gốc
 └── README.md              # Tài liệu hướng dẫn dự án
+```
+
+---
 📦 Hướng dẫn Khởi chạy Ứng dụng
 1. Chạy Backend API (.NET 9.0)
 Cấu hình chuỗi kết nối MySQL trong DPV.Backend/appsettings.json:
