@@ -20,7 +20,7 @@ Hệ thống hỗ trợ 3 mô hình chọn tour linh hoạt đáp ứng đa dạ
 
 Tất cả các công nghệ, framework và thư viện được sử dụng trong dự án đều cập nhật các phiên bản mới nhất:
 
-* **Backend API:** .NET 9.0 (C# ASP.NET Core Web API), Entity Framework Core 9.0, JWT Authentication, AutoMapper, FluentValidation, SignalR (Real-time notifications & GPS).
+* **Backend API:** .NET 10.0 (C# ASP.NET Core Web API), Entity Framework Core 9.0, JWT Authentication, AutoMapper, FluentValidation, SignalR (Real-time notifications & GPS).
 * **Frontend Web (Client & Dashboard):** React 19 (Vite), Tailwind CSS v4, React Router v7, Lucide React / React Icons, TanStack Query (React Query v5), Axios.
 * **Desktop App (Điều hành & Quản trị nội bộ):** WPF (.NET 9 / C#), MaterialDesignInXamlToolkit, CommunityToolkit.Mvvm.
 * **Mobile App (Dành cho Khách hàng & HDV):** React Native (Expo SDK 52+ / CLI), React Navigation v7, Tailwind CSS (NativeWind v4).
