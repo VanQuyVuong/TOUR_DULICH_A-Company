@@ -59,13 +59,64 @@ dotnet run
 ```
 API Server sẽ chạy mặc định tại https://localhost:7123 hoặc http://localhost:5123 (xem Swagger UI tại /swagger).
 
-2. Chạy Web App (React + Tailwind CSS)
+2. Chạy Web App (React (TypeScrip &JavaScrip) + Tailwind CSS)
 Truy cập thư mục Web App và cài đặt dependencies:
 ```text
 Bash
 cd DPV.Web
 npm install
 ```
+
+🛠️ Các bước thực hiện
+Bước 1: Mở folder DPV.Web trong VS Code
+Trên VS Code, vào File -> Open Folder...
+
+Trỏ tới thư mục: \TOUR_DULICH\DPV.Web và chọn Select Folder.
+
+Bước 2: Mở Terminal và Tạo project Vite + React
+Mở Terminal trong VS Code bằng phím tắt Ctrl + ~ (hoặc vào menu Terminal -> New Terminal).
+
+Chạy lệnh khởi tạo TypeScrip ngay tại thư mục này:
+```text
+
+Bash
+npx create-vite@latest . --template react-ts
+```
+Chạy lệnh khởi tạo JavScrip ngay tại thư mục này:
+```text
+Bash
+npx create-vite@latest . --template react
+```
+Lưu ý:
+
+Dấu chấm . giúp tạo code ngay trong folder DPV.Web mà không bị đẻ thêm folder lồng vào trong.
+
+--template react-ts sẽ tạo dự án React dùng TypeScript. Nếu bạn muốn dùng JavaScript thuần, hãy đổi thành --template react.
+
+Bước 3: Cài đặt các thư viện cần thiết (Packages)
+Sau khi lệnh trên tạo xong cấu trúc thư mục, bạn chạy tiếp lệnh sau để tải các gói phụ thuộc (node_modules):
+```text
+
+Bash
+npm install
+(Chờ khoảng 20 - 30 giây để npm tải xong).
+```
+Bước 4: Chạy ứng dụng Web (Run App)
+Thực thi lệnh sau để bắt đầu bật server dev:
+```text
+
+Bash
+npm run dev
+```
+Terminal sẽ hiển thị một đường dẫn cục bộ, ví dụ:
+
+Plaintext
+  VITE v5.x.x  ready in 300 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+👉 Bạn chỉ cần giữ phím Ctrl và nhấp chuột vào link http://localhost:5173/ (hoặc mở trình duyệt nhập địa chỉ đó) là sẽ thấy ngay trang chủ giao diện React!
 Khởi chạy Server Dev:
 
 ```text
@@ -110,6 +161,29 @@ Bash
 npx expo start
 ```
 Trên Terminal sẽ xuất hiện một mã QR Code lớn màu đen trắng.
+
+có 2 cách để xem và trải nghiệm giao diện app ngay lập tức:
+
+Cách 1: Xem trực tiếp trên điện thoại thật (Khuyên dùng)
+Tải ứng dụng Expo Go về điện thoại:
+
+Android: Tìm trên Google Play Store.
+
+iOS: Tìm trên App Store.
+
+Đảm bảo điện thoại và máy tính kết nối chung một mạng Wi-Fi.
+
+Mở ứng dụng Expo Go:
+
+Nếu dùng Android: Chọn nút Scan QR Code trong app rồi đưa camera lên quét mã QR trên màn hình VS Code.
+
+Nếu dùng iPhone: Chỉ cần mở ứng dụng Camera mặc định của máy quét mã QR -> Nhấn vào thông báo mở bằng Expo Go.
+
+Cách 2: Xem nhanh trên trình duyệt Web (Không cần điện thoại)
+Nhấn trực tiếp phím w vào màn hình Terminal (nơi đang hiển thị mã QR).
+
+Expo sẽ tự động bật trình duyệt Web (Chrome/Edge) lên và load ứng dụng dạng Web Client cho bạn xem ngay.
+
 4. Chạy Desktop App (WPF)
 Mở giải pháp DPV.sln bằng Visual Studio 2022 (đã cài workload .NET Desktop Development).
 
