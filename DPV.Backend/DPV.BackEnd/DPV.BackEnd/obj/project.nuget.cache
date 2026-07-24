@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "7m9FpsoInEo=",
+  "success": true,
+  "projectFilePath": "D:\\Csharp\\TOUR_DULICH\\DPV.Backend\\DPV.BackEnd\\DPV.BackEnd\\DPV.BackEnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "D:\\Csharp\\TOUR_DULICH\\DPV.Backend\\DPV.BackEnd\\DPV.BackEnd\\DPV.BackEnd.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Csharp\\TOUR_DULICH\\DPV.Backend\\DPV.BackEnd\\DPV.BackEnd\\DPV.BackEnd.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
