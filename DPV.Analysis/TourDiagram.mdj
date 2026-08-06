@@ -1,0 +1,123 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "DPV_TourDiagrams",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAGf14ODUlNH1c8=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model1",
+			"ownedElements": [
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "AAAAAAGf14ODUlNIF50=",
+					"_parent": {
+						"$ref": "AAAAAAGf14ODUlNH1c8="
+					},
+					"name": "UseCaseDiagram"
+				}
+			]
+		},
+		{
+			"_type": "ERDDataModel",
+			"_id": "AAAAAAGf14OvoFNNXHg=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Data Model1",
+			"ownedElements": [
+				{
+					"_type": "ERDDiagram",
+					"_id": "AAAAAAGf14OvoFNOqFA=",
+					"_parent": {
+						"$ref": "AAAAAAGf14OvoFNNXHg="
+					},
+					"name": "ERDDiagram1",
+					"ownedViews": [
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAGf14QOAlNUPwg=",
+							"_parent": {
+								"$ref": "AAAAAAGf14OvoFNOqFA="
+							},
+							"model": {
+								"$ref": "AAAAAAGf14QOAlNSB4E="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGf14QOAlNVCpQ=",
+									"_parent": {
+										"$ref": "AAAAAAGf14QOAlNUPwg="
+									},
+									"font": "Arial;13;1",
+									"left": 144,
+									"top": 61,
+									"width": 616,
+									"height": 13,
+									"text": "DPV_TOUR"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAGf14QOAlNW1sQ=",
+									"_parent": {
+										"$ref": "AAAAAAGf14QOAlNUPwg="
+									},
+									"model": {
+										"$ref": "AAAAAAGf14QOAlNSB4E="
+									},
+									"font": "Arial;13;0",
+									"left": 144,
+									"top": 79,
+									"width": 616,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 144,
+							"top": 56,
+							"width": 616,
+							"height": 592,
+							"nameLabel": {
+								"$ref": "AAAAAAGf14QOAlNVCpQ="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAGf14QOAlNW1sQ="
+							}
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAGf14QOAlNSB4E=",
+					"_parent": {
+						"$ref": "AAAAAAGf14OvoFNNXHg="
+					},
+					"name": "DPV_TOUR"
+				}
+			]
+		}
+	]
+}
