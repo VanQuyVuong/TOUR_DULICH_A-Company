@@ -1,4 +1,10 @@
 
+using DPV.BackEnd.Services.Interfaces;
+using DPV.BackEnd.Services.Implementations;
+using DPV.BackEnd.Data;
+using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
+
 namespace DPV.BackEnd
 {
     public class Program
@@ -7,7 +13,17 @@ namespace DPV.BackEnd
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Không tìm thấy DefaultConnection.");
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseMySql(
+                    connectionString,
+                    ServerVersion.AutoDetect(connectionString)));
+
+
             // Add services to the container.
+            builder.Services.AddScoped<IAuthService, AuthService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -19,6 +35,7 @@ namespace DPV.BackEnd
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+                app.MapScalarApiReference();
             }
 
             app.UseHttpsRedirection();

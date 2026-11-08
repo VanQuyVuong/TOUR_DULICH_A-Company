@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "on-surface-variant": "#3c494d", "surface-dim": "#d1daf4", "on-primary-fixed": "#001f26", "on-tertiary-fixed-variant": "#753400", "secondary-container": "#0266ff", "primary-fixed-dim": "#35d8f8", "secondary-fixed": "#dae1ff", "outline-variant": "#bbc9cd", "on-error": "#ffffff", "on-background": "#121b2e", "error": "#ba1a1a", "surface": "#f9f9ff", "tertiary-fixed": "#ffdbc8", "on-primary-container": "#004f5c", "surface-variant": "#d9e2fc", "inverse-surface": "#273044", "on-surface": "#121b2e", "on-secondary-container": "#f9f7ff", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#321200", "inverse-on-surface": "#edf0ff", "on-tertiary-container": "#753500", "secondary-fixed-dim": "#b3c5ff", "surface-container": "#e9edff", "surface-container-highest": "#d9e2fc", "on-secondary-fixed-variant": "#003fa4", "surface-container-low": "#f1f3ff", "surface-tint": "#006879", "surface-container-lowest": "#ffffff", "inverse-primary": "#35d8f8", "tertiary": "#994700", "on-primary-fixed-variant": "#004e5c", "surface-container-high": "#e1e8ff", "on-primary": "#ffffff", "tertiary-container": "#ff9e60", "error-container": "#ffdad6", "primary": "#006879", "on-tertiary": "#ffffff", "secondary": "#0050cc", "on-secondary": "#ffffff", "primary-container": "#00c7e6", "on-secondary-fixed": "#001849", "primary-fixed": "#a9edff", "tertiary-fixed-dim": "#ffb68b", "outline": "#6c797d", "background": "#f9f9ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "2rem" }, "fontFamily": { "label-sm": ["Be Vietnam Pro"], "headline-sm": ["Outfit"], "label-md": ["Be Vietnam Pro"], "headline-lg": ["Outfit"], "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "label-lg": ["Be Vietnam Pro"], "display-lg-mobile": ["Outfit"], "headline-lg-mobile": ["Outfit"], "display-lg": ["Outfit"], "headline-md": ["Outfit"], "body-sm": ["Be Vietnam Pro"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00C7E6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-secondary tracking-tight leading-none">DPV_DESK</span><span class="font-label-sm text-label-sm text-outline tracking-wider mt-0.5 uppercase">Core Operations</span></div></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low rounded-DEFAULT p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Online Ops</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold bg-surface-container-lowest px-space-xs py-0.5 rounded-DEFAULT">HN-HQ</span></div></div><nav class="flex-1 px-space-sm space-y-space-md pb-space-lg" data-active-classes="bg-secondary text-on-secondary font-semibold shadow-sm"><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Tổng Quan Hệ Thống</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-tong-quan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-md text-label-md">Dashboard Tổng Quan</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-cao-phan-tich" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-md text-label-md">Báo Cáo &amp; Phân Tích</span></a></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Quản Trị Tài Khoản &amp; Phòng Ban</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-tai-khoan" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-label-md text-label-md">Quản Lý Tài Khoản</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-phong-ban" href="#"><span class="material-symbols-outlined text-[20px]">corporate_fare</span><span class="font-label-md text-label-md">Quản Lý Phòng / Ban</span></a></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Dữ Liệu Danh Mục (Master Data)</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-danh-muc" href="#"><span class="material-symbols-outlined text-[20px]">dataset</span><span class="font-label-md text-label-md">Quản Lý Danh Mục</span></a></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Quản Trị Vận Hành &amp; Tour</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dieu-hanh-tour-departure" href="#"><span class="material-symbols-outlined text-[20px]">flight_takeoff</span><span class="font-label-md text-label-md">Điều Hành Tour &amp; Departure</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-booking-khach" href="#"><span class="material-symbols-outlined text-[20px]">book_online</span><span class="font-label-md text-label-md">Quản Lý Booking &amp; Khách</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="yeu-cau-tour-rieng" href="#"><span class="material-symbols-outlined text-[20px]">card_travel</span><span class="font-label-md text-label-md">Yêu Cầu Tour Riêng</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="xu-ly-su-co" href="#"><span class="material-symbols-outlined text-[20px]">report_problem</span><span class="font-label-md text-label-md">Xử Lý Sự Cố</span></a></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Cấu Hình &amp; Nhật Ký</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-log-phan-quyen" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-label-md text-label-md">Audit Log &amp; Phân Quyền</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cai-dat-he-thong" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Cài Đặt Hệ Thống</span></a></div></nav></div><div class="p-space-md bg-surface-container-low rounded-t-DEFAULT space-y-space-xs"><div class="flex items-center justify-between text-outline"><span class="font-label-sm text-label-sm">DPV Core Ops</span><span class="font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-secondary font-semibold">v2.4 Enterprise</span></div><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">support_agent</span><span class="font-body-sm text-body-sm">Hotline IT: 1900 6868 (Ext: 102)</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Tìm kiếm mã tour, mã booking, khách hàng, nhân sự... (Ctrl + K)" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low rounded-full px-space-sm py-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">apartment</span><span class="font-label-sm text-label-sm text-on-surface font-medium">Trụ sở: Hà Nội &amp; TP.HCM</span><span class="w-2 h-2 rounded-full bg-primary-container"></span></div><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Trần Đăng Khoa</div><div class="font-label-sm text-label-sm text-primary font-medium leading-tight">Super Admin / Quản trị viên</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Quick Status Meta -->
+<div class="flex items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">admin_panel_settings</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Quản trị hệ thống</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Quản lý danh mục Master Data</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-1.5 rounded-full shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Data Integrity:</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2 py-0.5 rounded-full font-medium">Bảo vệ tham chiếu Tour &amp; Departure ON</span>
+</div>
+</div>
+<!-- Header Banner Section with Airy Depth & Micro Stats -->
+<div class="relative bg-surface-container-lowest rounded-lg p-space-lg shadow-sm mb-space-lg overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-gradient-to-br from-primary-fixed/40 via-surface-variant/20 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="max-w-3xl space-y-1">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">DPV Architecture v2.4</span>
+<span class="text-outline text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-outline">Quy chuẩn dữ liệu dùng chung</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Quản Trị Danh Mục Dữ Liệu Dùng Chung (Master Data)</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Cấu hình và chuẩn hóa các danh mục nền tảng được dùng chung cho việc tạo Tour, xếp lịch Departure và phân công HDV.</p>
+</div>
+<!-- Quick KPI Chips -->
+<div class="flex items-center gap-space-md flex-wrap lg:flex-nowrap">
+<div class="bg-surface-container-low px-space-md py- space-sm rounded-DEFAULT flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">explore</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">186</div>
+<div class="font-label-sm text-label-sm text-outline">Điểm tham quan</div>
+</div>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-DEFAULT flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">1,420</div>
+<div class="font-label-sm text-label-sm text-outline">Tour đang trỏ liên kết</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Master Tabs Bar (6 Chuẩn Hoá Theo SPEC) -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-1.5 shadow-sm mb-space-lg">
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+<!-- Tab 1 -->
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high transition-all text-left whitespace-nowrap">
+<span class="material-symbols-outlined text-[19px]">public</span>
+<span class="font-label-md text-label-md">Quốc Gia (QUOC_GIA)</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded-full text-outline font-semibold">12</span>
+</button>
+<!-- Tab 2 -->
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high transition-all text-left whitespace-nowrap">
+<span class="material-symbols-outlined text-[19px]">location_city</span>
+<span class="font-label-md text-label-md">Tỉnh / Thành Phố (TINH_THANH)</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded-full text-outline font-semibold">63</span>
+</button>
+<!-- Tab 3: ACTIVE -->
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-DEFAULT bg-secondary text-on-secondary font-semibold shadow-sm transition-all text-left whitespace-nowrap">
+<span class="material-symbols-outlined text-[19px]">tour</span>
+<span class="font-label-md text-label-md">Điểm Đến &amp; Thắng Cảnh (DIA_DIEM)</span>
+<span class="text-label-sm font-label-sm bg-on-secondary/20 text-on-secondary px-2 py-0.5 rounded-full font-bold">186</span>
+</button>
+<!-- Tab 4 -->
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high transition-all text-left whitespace-nowrap">
+<span class="material-symbols-outlined text-[19px]">category</span>
+<span class="font-label-md text-label-md">Loại Tour Du Lịch (LOAI_TOUR)</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded-full text-outline font-semibold">8</span>
+</button>
+<!-- Tab 5 -->
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high transition-all text-left whitespace-nowrap">
+<span class="material-symbols-outlined text-[19px]">translate</span>
+<span class="font-label-md text-label-md">Ngôn Ngữ Hướng Dẫn (NGON_NGU)</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded-full text-outline font-semibold">14</span>
+</button>
+<!-- Tab 6 -->
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high transition-all text-left whitespace-nowrap">
+<span class="material-symbols-outlined text-[19px]">badge</span>
+<span class="font-label-md text-label-md">Chuyên Môn &amp; Kỹ Năng HDV</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded-full text-outline font-semibold">22</span>
+</button>
+</div>
+</div>
+<!-- Main Work Area: Split Grid with Action Toolbar, Table & Integrated Quick Edit Drawer -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left / Center Section: Data Table Area (8 or 12 Cols depending on drawer) -->
+<div class="xl:col-span-8 flex flex-col space-y-space-md">
+<!-- Top Action Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search & Filter Controls -->
+<div class="flex items-center flex-wrap sm:flex-nowrap gap-space-sm flex-1">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[220px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-2 bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" placeholder="Tìm tên điểm đến, mã địa danh..." type="text"/>
+</div>
+<!-- Tỉnh Thành Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low pl-3 pr-8 py-2 rounded-full font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option value="">Tất cả Tỉnh / Thành</option>
+<option value="QN">Quảng Ninh (34)</option>
+<option value="DN">Đà Nẵng (28)</option>
+<option value="LC">Lào Cai - Sa Pa (19)</option>
+<option value="KG">Kiên Giang - Phú Quốc (24)</option>
+<option value="HG">Hà Giang (16)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-[16px]">expand_more</span>
+</div>
+<!-- Trạng thái Toggle Pills -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-full">
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container-lowest text-secondary shadow-sm">Tất cả</button>
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface">Đang dùng</button>
+<button class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface">Tạm dừng</button>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="flex items-center gap-space-xs self-end lg:self-auto">
+<button class="p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center justify-center" title="Xuất báo cáo Excel">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+<button class="p-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center justify-center" title="Nhập danh sách từ CSV">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all" onclick="document.getElementById('drawer-panel').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">add_location_alt</span>
+<span>Thêm Mới Điểm Đến</span>
+</button>
+</div>
+</div>
+<!-- Data Table Card -->
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-sm overflow-hidden">
+<!-- Table Header Meta -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Danh sách Địa Điểm Tuyến Tour</span>
+<span class="font-label-sm text-label-sm text-outline">Hiển thị 6 / 186 bản ghi</span>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">info</span>
+<span>Quy tắc: Không Hard Delete khi đã có Tour liên kết</span>
+</div>
+</div>
+<!-- Table Responsive -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/60 text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Mã địa danh</th>
+<th class="py-3 px-space-xs font-semibold">Thumbnail</th>
+<th class="py-3 px-space-md font-semibold">Tên điểm đến &amp; Vị trí</th>
+<th class="py-3 px-space-md font-semibold">Phân loại cảnh quan</th>
+<th class="py-3 px-space-md font-semibold text-center">Tour liên kết</th>
+<th class="py-3 px-space-md font-semibold text-center">Trạng thái</th>
+<th class="py-3 px-space-md font-semibold text-right">Thao tác</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/60 font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Vịnh Hạ Long -->
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3.5 px-space-md font-mono font-semibold text-secondary">
+                  DD-QN-01
+                </td>
+<td class="py-3.5 px-space-xs">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shadow-sm relative group bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Breathtaking wide-angle landscape of Ha Long Bay limestone karsts rising dramatically out of emerald green waters under a warm sun, luxury wooden junk boats sailing calmly, professional aerial travel photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC5jEfIeECzw187tRTYcDjx5qzQIuVX2JBKSL2MuE0lyrZI_873wnD8JEWYr-rJ8Nwk2WCUB3Uqf571n2d4FdWyB_I0xkQ_U4pSD5MeVs5K0vV3x2inV6VALQdTpPRK8Pd3m70MFH3GevCADETYXSU2QeGgUasJ5umfFFatKsokBw7Y4vF4p02r3Ean-tDVjwohbLYKODWxtJ3ZkC1NWpyWZuPZjq4yQSdnn6qgDhhuww89B4Ku9pd-Q"/>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Vịnh Hạ Long &amp; Hang Sửng Sốt</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Quảng Ninh</span>
+<span class="text-outline text-label-sm">• Tọa độ: 20.9101, 107.1839</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">landscape</span>
+                    Di sản thiên nhiên
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[15px]">connecting_airports</span>
+<span>14 Tour</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>ACTIVE</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary transition-all" title="Chỉnh sửa chi tiết">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all" title="Xem danh sách 14 Tour">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-tertiary transition-all" title="Tạm dừng hoạt động (Inactive)">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Bà Nà Hills -->
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3.5 px-space-md font-mono font-semibold text-secondary">
+                  DD-DN-02
+                </td>
+<td class="py-3.5 px-space-xs">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shadow-sm relative group bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Iconic Golden Bridge in Da Nang held by giant stone hands emerging from mountain cliffs among mist and sunlight, luxury resort mountain atmosphere, vibrant travel photography with turquoise and gold tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiPPEq27viF7plKFPvmR6FFfbZTcQO1KY4MBV9JNPHzxNVCK3xdv5I266gs5oUaoir93tSrtdpIcq3oToS0_WaZBxNTwjJQMISkf313os-pkuDNsg5zZyj1chs178_YoD2Qf2QmZ5NFegOlM0w0JzXcvlJyZP4TolUspZ3___I-K5rMuZa9EpFIFc7JBKJVrYejQhOLkat9XqjKs_ITKTso6Cm1XJ_UxR185kE9xpnrX-nDNRmfdd-oA"/>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Bà Nà Hills &amp; Cầu Vàng</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Đà Nẵng</span>
+<span class="text-outline text-label-sm">• Tọa độ: 15.9988, 107.9961</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">hotel</span>
+                    Khu nghỉ dưỡng cao cấp
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[15px]">connecting_airports</span>
+<span>18 Tour</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>ACTIVE</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary transition-all" title="Chỉnh sửa chi tiết">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all" title="Xem danh sách 18 Tour">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-tertiary transition-all" title="Tạm dừng hoạt động (Inactive)">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Fansipan -->
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3.5 px-space-md font-mono font-semibold text-secondary">
+                  DD-LC-05
+                </td>
+<td class="py-3.5 px-space-xs">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shadow-sm relative group bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Dramatic high mountain peak of Mount Fansipan with stone monument piercing through sea of white clouds under azure blue sky, majestic mountain ridges, Sapa Vietnam, epic travel lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM66HiV5DIhjnWPazLx0pBSEtFPApEAWbSXZnGmyBu0Kc_Cgbw29A66LxVBWjqblvtdXufgF7BvU9mfYo44poOgaY7-5bQN64bDeZnz8qkxc8RdlEhmSJprF99FhAOa9A0ZFGiiy0yxBp7LoH0WCecICUucRJW5FQpX0J5h5E_VfpgLW_qOEg_VrHKKRK9yEk0Z7ISSJ0uUjd41q8MMYt1EcpXDxTZkis9N2FNIdo4Hyb9LFtyTNX4rQ"/>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Đỉnh Fansipan &amp; Bản Cát Cát</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Lào Cai (Sa Pa)</span>
+<span class="text-outline text-label-sm">• Tọa độ: 22.3033, 103.7753</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">hiking</span>
+                    Leo núi &amp; Bản sắc
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[15px]">connecting_airports</span>
+<span>9 Tour</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>ACTIVE</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary transition-all" title="Chỉnh sửa chi tiết">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all" title="Xem danh sách 9 Tour">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-tertiary transition-all" title="Tạm dừng hoạt động (Inactive)">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Hòn Thơm -->
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3.5 px-space-md font-mono font-semibold text-secondary">
+                  DD-KG-08
+                </td>
+<td class="py-3.5 px-space-xs">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shadow-sm relative group bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Tropical island resort view of Hon Thom cable car soaring above turquoise crystal clear ocean and coconut palms, white sand beach in Phu Quoc Vietnam, bright vibrant paradise atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtpfWq2lUIo8f9ZNtV5LVz4OrtaAp7VAjs8TtdhVLgiGJZDKP8v-7Uj1T5OTKfTqVHwC0xmvbo6ZtUyFl_lDKQWbQukYC2XhpG7pLTcnEdaIMV4CUt8Rz66dWt2kbD5misWCIXxXCcdXET4_HI-PGTJFOF2CHc6RMYNNAem2vkMGNWjS6eWnJAd3RNuo0zn28MhBEKl43mv6VO5YVDOcuTrd6e9FIVRqH-5UZQjmb1prZqcGX7vtch-Q"/>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Cáp Treo Hòn Thơm &amp; Bãi Sao</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Kiên Giang (Phú Quốc)</span>
+<span class="text-outline text-label-sm">• Tọa độ: 10.0278, 104.0112</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">beach_access</span>
+                    Biển đảo
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[15px]">connecting_airports</span>
+<span>12 Tour</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>ACTIVE</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary transition-all" title="Chỉnh sửa chi tiết">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all" title="Xem danh sách 12 Tour">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-tertiary transition-all" title="Tạm dừng hoạt động (Inactive)">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Mã Pí Lèng -->
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3.5 px-space-md font-mono font-semibold text-secondary">
+                  DD-HG-11
+                </td>
+<td class="py-3.5 px-space-xs">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shadow-sm relative group bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Breathtaking Ma Pi Leng Pass in Ha Giang towering over winding turquoise Nho Que River deep down in the canyon, winding mountain road, bright sunshine and sharp mountain peaks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMg8Bnd6cyZRp80KFmjnxeIyt_KDJ-OtRmAXmqG3HYGWSVFJf-WkS2D7JJnuWdqIHQyHHW7XykPMwg2rrn3zXrdZOzlmn0F0FYaRJeyUO_PMHM3NdQbSxfjZ4oIo79ZlvV_WbyJ7FaVNV9qsQbLwihgjZIA8ygVNbvE9EYczLsng-MhTC_8PCF4gVlc-p7G5OFrE5nnnKiak-vJD58XPfOFDMiB1pGgdnMJIDFhXkO2oNmd6TmcibIRQ"/>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Đèo Mã Pí Lèng &amp; Sông Nho Quế</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Hà Giang</span>
+<span class="text-outline text-label-sm">• Tọa độ: 23.2422, 105.4194</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">navigation</span>
+                    Cung đường khám phá
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold shadow-xs">
+<span class="material-symbols-outlined text-[15px]">connecting_airports</span>
+<span>6 Tour</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>ACTIVE</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary transition-all" title="Chỉnh sửa chi tiết">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all" title="Xem danh sách 6 Tour">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-tertiary transition-all" title="Tạm dừng hoạt động (Inactive)">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Đảo Soi Sim (Inactive Item Case) -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors opacity-85">
+<td class="py-3.5 px-space-md font-mono font-semibold text-outline">
+                  DD-QN-19
+                </td>
+<td class="py-3.5 px-space-xs">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shadow-sm relative group bg-surface-container filter grayscale-[40%]">
+<img class="w-full h-full object-cover" data-alt="Quiet sandy island beach with wooden dock under maintenance in Ha Long bay, quiet sea breeze, subdued soft morning natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJRCROUkEszMJG5LsLkLno20tD3wQigCv-qolqkE2Bm4wUxgcPt8guUjqucxF_ioU2pxop--HJmFypcbA2dEyDa7lT30n86RqBhm5gXZNw759_9SdjSlmWyAKOMJLjW16eCPa_5j-Hl3jXriSH_9zHDbdvCU13WA7Td3aYwHdB-1iKKWtwOVYaia7zciQImxY0vS0nERXbXZk1xFwq7krfVIA0T8i51KR8-xTjbu_CEYG_T5ve19FRjw"/>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface line-through decoration-outline">Bãi tắm Soi Sim (Bảo trì bến tàu)</div>
+<div class="flex items-center gap-1 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px]">location_off</span>
+<span>Quảng Ninh</span>
+<span class="text-tertiary font-label-sm">• Tạm ngưng đón khách du lịch</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">beach_access</span>
+                    Bãi biển
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-label-sm font-medium">
+<span>0 Tour</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>INACTIVE</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary transition-all" title="Chỉnh sửa chi tiết">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-primary font-semibold transition-all" title="Kích hoạt lại địa điểm này">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span>Hiển thị mỗi trang:</span>
+<select class="bg-surface-container-lowest px-2 py-1 rounded-full text-label-sm font-label-sm font-semibold focus:outline-none">
+<option>10 bản ghi</option>
+<option selected="">20 bản ghi</option>
+<option>50 bản ghi</option>
+</select>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-xs">1</span>
+<button class="px-3 py-1 rounded-full hover:bg-surface-container-high font-label-sm text-label-sm">2</button>
+<button class="px-3 py-1 rounded-full hover:bg-surface-container-high font-label-sm text-label-sm">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-3 py-1 rounded-full hover:bg-surface-container-high font-label-sm text-label-sm">10</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Section: Quick Add/Edit Master Data Drawer Panel -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm flex flex-col space-y-space-md" id="drawer-panel">
+<!-- Panel Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">edit_location</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Thêm / Chỉnh Sửa Địa Điểm</h2>
+<p class="font-label-sm text-label-sm text-outline">Cập nhật Master Data DIA_DIEM</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Mới</span>
+</div>
+<!-- Critical Notice / Safe Rule Badge -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-high/60 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold">Quy chuẩn dữ liệu tham chiếu:</strong> Dữ liệu đã phát sinh Tour liên kết sẽ không thể xóa vĩnh viễn nhằm bảo toàn tính toàn vẹn của lịch sử booking, chỉ cho phép chuyển sang trạng thái <strong class="text-tertiary">Tạm dừng (Inactive)</strong>.
+        </p>
+</div>
+<!-- Form Fields -->
+<form class="space-y-space-md" onsubmit="event.preventDefault();">
+<!-- Mã địa danh & Tỉnh Thành -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Mã địa danh (*)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-DEFAULT font-mono text-label-md text-secondary font-bold focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="DD-XX-00" type="text" value="DD-QN-25"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Tỉnh / Thành phố (*)</label>
+<select class="w-full px-3 py-2 bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all cursor-pointer">
+<option selected="" value="QN">Quảng Ninh</option>
+<option value="DN">Đà Nẵng</option>
+<option value="LC">Lào Cai</option>
+<option value="KG">Kiên Giang</option>
+<option value="HG">Hà Giang</option>
+</select>
+</div>
+</div>
+<!-- Tên điểm đến -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Tên Điểm Đến / Thắng Cảnh (*)</label>
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-DEFAULT font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Ví dụ: Đảo Ti Tốp, Hang Đầu Gỗ..." type="text"/>
+</div>
+<!-- Phân loại & GPS -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Phân loại cảnh quan</label>
+<select class="w-full px-3 py-2 bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface focus:outline-none cursor-pointer">
+<option>Di sản thiên nhiên</option>
+<option>Biển đảo &amp; Vịnh</option>
+<option>Di tích lịch sử</option>
+<option>Sinh thái &amp; Rừng</option>
+<option>Khu vui chơi giải trí</option>
+<option>Tâm linh &amp; Đền chùa</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Tọa độ GPS (Lat, Long)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="20.8521, 107.0812" type="text"/>
+</div>
+</div>
+<!-- Ảnh đại diện Thumbnail Upload simulation -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Ảnh đại diện điểm đến (16:9)</label>
+<div class="relative bg-surface-container-low rounded-DEFAULT p-space-md text-center flex flex-col items-center justify-center gap-1.5 hover:bg-surface-container transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-[28px] text-primary group-hover:scale-110 transition-transform">add_photo_alternate</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Tải ảnh lên hoặc kéo thả vào đây</span>
+<span class="font-body-sm text-body-sm text-outline">Hỗ trợ JPG, PNG, WEBP tối đa 4MB</span>
+</div>
+</div>
+<!-- Mô tả ngắn gọn -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1">Mô tả tóm tắt tuyến điểm</label>
+<textarea class="w-full p-3 bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all resize-none" placeholder="Nhập tóm tắt đặc trưng điểm đến, lưu ý thời gian mở cửa, quy định phương tiện thủy hoặc cáp treo..." rows="3"></textarea>
+</div>
+<!-- Trạng thái hoạt động Toggle -->
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">toggle_on</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Kích hoạt sử dụng ngay (Active)</div>
+<div class="font-body-sm text-body-sm text-outline">Cho phép chọn điểm khi thiết lập Tour</div>
+</div>
+</div>
+<!-- Toggle visual -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Form Action Buttons -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all font-label-md text-label-md" type="reset">
+            Hủy Bỏ
+          </button>
+<button class="px-space-lg py-2.5 rounded-full bg-secondary text-on-secondary hover:bg-primary-container hover:text-on-primary-container transition-all font-label-md text-label-md font-semibold shadow-sm flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Lưu Bản Ghi Master</span>
+</button>
+</div>
+</form>
+<!-- Mini Audit Trail -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-lowest flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Người sửa gần nhất: Trần Đăng Khoa</span>
+<span>Hôm nay 10:45 AM</span>
+</div>
+</div>
+</div>
+<!-- Master Data Integrity Summary Bento -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Rule 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Đồng bộ đa cấp Master Data</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Quốc Gia (QUOC_GIA) → Tỉnh Thành (TINH_THANH) → Điểm Đến (DIA_DIEM). Khi một tỉnh bị Inactive, các điểm đến trực thuộc sẽ tự động cảnh báo.</p>
+</div>
+</div>
+<!-- Rule 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">lock_clock</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Khóa bảo toàn Lịch sử Booking</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Không cho phép xóa cứng các thực thể Master Data đã phát sinh chuyến đi và phân công HDV để đối soát tài chính và log điều hành.</p>
+</div>
+</div>
+<!-- Rule 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">sync_saved_locally</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Cập nhật Realtime sang Sales App</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Các thay đổi về tên điểm, ảnh đại diện và loại hình tham quan sẽ được cập nhật tức thì đến màn hình tạo tour của bộ phận Product &amp; Điều hành.</p>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

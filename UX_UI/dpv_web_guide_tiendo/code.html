@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#f1f3ff","tertiary-fixed":"#ffdbc8","secondary-container":"#0266ff","on-surface-variant":"#3c494d","surface-tint":"#006879","on-primary-container":"#004f5c","on-error":"#ffffff","outline-variant":"#bbc9cd","secondary-fixed-dim":"#b3c5ff","secondary":"#0050cc","on-tertiary-fixed":"#321200","tertiary":"#994700","surface-container-lowest":"#ffffff","surface":"#f9f9ff","error":"#ba1a1a","primary-fixed-dim":"#35d8f8","surface-container-highest":"#d9e2fc","surface-dim":"#d1daf4","primary-container":"#00c7e6","on-secondary":"#ffffff","surface-variant":"#d9e2fc","tertiary-container":"#ff9e60","on-tertiary-fixed-variant":"#753400","on-primary":"#ffffff","surface-container":"#e9edff","on-secondary-fixed":"#001849","error-container":"#ffdad6","on-tertiary":"#ffffff","on-background":"#121b2e","on-secondary-container":"#f9f7ff","on-error-container":"#93000a","primary":"#006879","on-tertiary-container":"#753500","tertiary-fixed-dim":"#ffb68b","surface-container-high":"#e1e8ff","surface-bright":"#f9f9ff","on-primary-fixed":"#001f26","on-primary-fixed-variant":"#004e5c","inverse-on-surface":"#edf0ff","primary-fixed":"#a9edff","outline":"#6c797d","on-secondary-fixed-variant":"#003fa4","inverse-primary":"#35d8f8","on-surface":"#121b2e","background":"#f9f9ff","inverse-surface":"#273044","secondary-fixed":"#dae1ff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"gutter":"1.5rem","space-md":"1rem","space-xs":"0.25rem","space-xl":"2.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-mobile":"1rem","margin":"2rem"},fontFamily:{"label-md":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"display-lg":["Outfit"],"display-lg-mobile":["Outfit"],"headline-sm":["Outfit"],"body-lg":["Be Vietnam Pro"],"headline-md":["Outfit"],"body-sm":["Be Vietnam Pro"],"body-md":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"headline-lg":["Outfit"],"headline-lg-mobile":["Outfit"]},fontSize:{"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"0",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"0",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">flight_takeoff</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-secondary leading-none">DPV Portal</span><span class="font-label-sm text-label-sm text-on-surface-variant">Điều hành du lịch</span></div></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low rounded-DEFAULT px-space-md py-space-xs flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Hệ thống Trực tuyến</span></div></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto pt-space-xs" data-active-classes="bg-secondary-container text-on-secondary-container font-label-md"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dieu-hanh-tong-quan" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="font-label-md text-label-md">Tổng quan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-tour-lich-khoi-hanh" href="#"><span class="material-symbols-outlined text-[20px]">tour</span><span class="font-label-md text-label-md">Tour &amp; Khởi hành</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT transition-all bg-secondary-container text-on-secondary-container font-label-md" data-path="phan-cong-huong-dan-vien" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-md text-label-md">Hướng dẫn viên</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dat-cho-danh-sach-khach" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-md text-label-md">Booking &amp; Khách</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nha-cung-cap-dich-vu" href="#"><span class="material-symbols-outlined text-[20px]">handshake</span><span class="font-label-md text-label-md">Nhà cung cấp</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-cao-tai-chinh" href="#"><span class="material-symbols-outlined text-[20px]">finance_mode</span><span class="font-label-md text-label-md">Báo cáo doanh thu</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-tri-he-thong" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-label-md text-label-md">Quản trị hệ thống</span></a></nav><div class="p-space-md bg-surface-container-lowest mt-auto"><div class="bg-surface-container rounded-DEFAULT p-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Trực nhật OPS</span><span class="material-symbols-outlined text-secondary text-[16px]">support_agent</span></div><span class="font-label-md text-label-md text-on-surface">Hotline Hỗ Trợ 24/7</span><span class="font-body-sm text-body-sm text-secondary font-semibold">1900 6868 (Ext 2)</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00C7E6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-low rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Tìm mã đoàn, tên khách, HDV, booking..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-primary-container/20 px-space-md py-1 rounded-full"><span class="material-symbols-outlined text-primary text-[16px]">verified</span><span class="font-label-sm text-label-sm text-on-primary-container font-semibold">Trụ sở: Hà Nội &amp; TP.HCM</span></div><button class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><button class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">chat_bubble</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low hover:bg-surface-container-high rounded-full py-1 pr-space-md transition-colors cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight font-semibold">Trần Đăng Khoa</span><span class="font-label-sm text-label-sm text-secondary leading-none text-[10px]">OPS Manager</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></div></header><main class="relative w-full pt-16 bg-surface px-gutter py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Operational Context Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/10 flex items-center justify-center text-secondary shrink-0 mt-1">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">sailing</span>
+</div>
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container/10 text-secondary font-label-sm text-label-sm uppercase tracking-wider">Mã đoàn: DPV-DEP-2026-HL01</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Ngày 2/3: Khám phá Hang Sáng Tối &amp; Kayak
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Cập Nhật Tiến Độ Hành Trình &amp; Nhật Ký Đoàn</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tour Vịnh Hạ Long 5 Sao Diamond Luxury | HDV Hiện trường: <span class="font-semibold text-on-surface">Nguyễn Tuấn Dũng (ID: HDV-8829)</span></p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center gap-space-sm self-end lg:self-center shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-secondary font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>Liên hệ Quản lý điều hành</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary font-label-md text-label-md shadow-sm hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Xuất nhật ký đoàn (PDF)</span>
+</button>
+</div>
+</div>
+<!-- Operational Statistics Overview -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tiến độ tổng thể</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">2 / 5 <span class="text-emerald-600 font-label-sm text-label-sm">(40%)</span></p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sĩ số đoàn</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">28 / 28 <span class="text-secondary font-label-sm text-label-sm">Đầy đủ</span></p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">wb_sunny</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Thời tiết hiện trường</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">27°C <span class="text-on-surface-variant font-label-sm text-label-sm">Nắng nhẹ êm sóng</span></p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">report_problem</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sự cố khẩn cấp</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">0 <span class="text-emerald-600 font-label-sm text-label-sm">An toàn tuyệt đối</span></p>
+</div>
+</div>
+</div>
+<!-- Main 2-Column Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Timelines and Current Milestone Realtime Form (65% / 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Interactive Tour Milestones Timeline -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">timeline</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lộ Trình &amp; Mốc Hành Trình Chi Tiết</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container-low text-on-surface-variant rounded-full">Tự động đồng bộ GPS vệ tinh</span>
+</div>
+<!-- Vertical Milestone Timeline -->
+<div class="relative pl-6 space-y-8 before:absolute before:left-3 before:top-3 before:bottom-3 before:w-0.5 before:bg-surface-container-highest">
+<!-- Mốc 1: Completed -->
+<div class="relative group">
+<div class="absolute -left-[30px] top-1 w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-space-xs hover:shadow-sm transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-emerald-700 bg-emerald-100 px-space-sm py-0.5 rounded-full uppercase tracking-wider">Đã hoàn thành ✓</span>
+<span class="font-label-md text-label-md text-on-surface-variant">08:00 - Ngày 1 (Hôm qua)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">verified</span> Đúng lịch trình
+                </span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface font-semibold">Mốc 1: Đón khách tại Nhà Hát Lớn Hà Nội</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Điểm danh 28/28 khách đầy đủ, xuất phát đúng giờ bằng xe Limousine DPV 29 chỗ (BKS: 29B-688.92). Phát nước suối, đồ ăn nhẹ và thông báo quy chế an toàn.</p>
+<div class="flex items-center gap-2 pt-1 text-on-surface-variant text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[15px]">image</span> 2 ảnh xác thực đón khách đã lưu hồ sơ
+              </div>
+</div>
+</div>
+<!-- Mốc 2: Completed -->
+<div class="relative group">
+<div class="absolute -left-[30px] top-1 w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-space-xs hover:shadow-sm transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-emerald-700 bg-emerald-100 px-space-sm py-0.5 rounded-full uppercase tracking-wider">Đã hoàn thành ✓</span>
+<span class="font-label-md text-label-md text-on-surface-variant">12:00 - Ngày 1 (Hôm qua)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">verified</span> Đúng tiến độ
+                </span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface font-semibold">Mốc 2: Check-in Du thuyền &amp; Ăn trưa Buffet hải sản</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bố trí cabin tầng 2 và 3 theo danh sách đăng ký. Khách dùng bữa trưa ngắm vịnh suôn sẻ, không phát sinh dị ứng thức ăn hay khiếu nại buồng phòng.</p>
+</div>
+</div>
+<!-- Mốc 3: Active Currently (Live) -->
+<div class="relative">
+<div class="absolute -left-[32px] top-0.5 w-7 h-7 rounded-full bg-secondary-container text-white flex items-center justify-center shadow-[0_0_0_4px_rgba(2,102,255,0.2)]">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-md space-y-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-secondary-container bg-secondary-container px-space-sm py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    Đang diễn ra ➔
+                  </span>
+<span class="font-label-md text-label-md text-secondary font-semibold">08:30 - Ngày 2 (Hiện tại)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/10 px-space-sm py-0.5 rounded-full font-medium">GPS: Khu bảo tồn Hang Sáng Tối</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Mốc 3: Chèo thuyền Kayak Hang Sáng Tối &amp; Tắm biển Ti Tốp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Khách đang chèo thuyền, thời tiết nắng nhẹ gió êm, an toàn 100%. Đã trang bị đầy đủ áo phao cứu sinh đạt chuẩn cho toàn bộ 28 du khách và 2 cứu hộ đi kèm.</p>
+</div>
+<!-- Realtime Visual Proof Preview -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="relative group rounded-DEFAULT overflow-hidden h-28 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Clear turquoise waters of Ha Long Bay with happy tourists in colorful bright kayaks paddling through an arched limestone sea cave called Hang Sang Toi. Bright natural morning sunlight, crystal clear emerald water, cinematic composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPjtcTH6VEsjU7upSvx-faUI86RQc_ESVSNP5mIND_0bXQd2Hg9LVozu9lXnWatC6Yk99vbT4Pg_v0sx3lpMOFiBfPFjK9a714_wqjo0Tva1etclcFoO45b8RP3WkuVfBEMfWVJIAictZbI0OFKw0iVZc4biZB8MtmrNkAuYiL9tP-mRiyVqSCztk8392cS8_1GRBOH0V_9XSklWP9TvQYJC364mchqKvJy0KIiyzNTd9gHvwThhX2YA"/>
+<span class="absolute bottom-1 right-1 bg-on-background/70 text-surface font-label-sm text-label-sm px-1.5 py-0.5 rounded">08:45 AM</span>
+</div>
+<div class="relative group rounded-DEFAULT overflow-hidden h-28 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Tour guide giving safety vest briefing on a wooden tender boat in Ha Long Bay Vietnam, lush karst peaks in background, cheerful atmosphere, natural sunny daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0YG9u2zt9XSvm83QfnCKuXE-7cczGZTgtVze9hzzq28nhqQAR3JULX-KYGBFEnVHe_gBFWF_QwPLqtoaeJA0XCrhjIyEmiRdcUxzg-ny0OgYtAeAGhYPoM7hevu_wAvnE3UrDn2nDHwsq9ZcAlxOLJQYkvjRf_Hj2Z19YhkG-6OzNnvvBcpmvT5dgSWfGG1_SoTwIjvsHXhrRcIkHg2l0nx9yjxiDxbiHjoCQQrM6mLcSp2g7EcozjQ"/>
+<span class="absolute bottom-1 right-1 bg-on-background/70 text-surface font-label-sm text-label-sm px-1.5 py-0.5 rounded">08:32 AM</span>
+</div>
+<div class="flex flex-col items-center justify-center h-28 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer text-secondary">
+<span class="material-symbols-outlined text-[28px]">add_a_photo</span>
+<span class="font-label-sm text-label-sm font-semibold mt-1">Thêm ảnh mốc</span>
+</div>
+</div>
+<!-- Quick action triggers -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Cập nhật ghi chú mốc</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Tải ảnh check-in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mốc 4: Upcoming -->
+<div class="relative group">
+<div class="absolute -left-[30px] top-1 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container px-space-sm py-0.5 rounded-full uppercase tracking-wider">Chưa bắt đầu ○</span>
+<span class="font-label-md text-label-md text-on-surface-variant">18:30 - Ngày 2 (Tối nay)</span>
+</div>
+<span class="font-label-sm text-label-sm text-amber-700 bg-amber-100 px-space-sm py-0.5 rounded-full font-medium">Cần chuẩn bị</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface font-semibold">Mốc 4: Tiệc Gala Dinner &amp; BBQ Hoàng Hôn</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Đã kiểm tra thực đơn ăn chay riêng cho 3 khách (Phòng 204, 301). Sắp xếp dàn âm thanh và kịch bản mini game giao lưu boong tàu.</p>
+</div>
+</div>
+<!-- Mốc 5: Upcoming -->
+<div class="relative group">
+<div class="absolute -left-[30px] top-1 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container px-space-sm py-0.5 rounded-full uppercase tracking-wider">Chưa bắt đầu ○</span>
+<span class="font-label-md text-label-md text-on-surface-variant">11:00 - Ngày 3 (Ngày mai)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface font-semibold">Mốc 5: Trả phòng &amp; Xe đưa về Hà Nội</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Thủ tục thanh toán chi phí cá nhân, xe Limousine đón đoàn tại Cảng Tuần Châu về lại điểm hẹn ban đầu.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Update Form for Current Milestone -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">bolt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cập Nhật Nhanh Mốc Tiến Độ Hiện Tại</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Đang thao tác: Mốc 3 (Hang Sáng Tối)</span>
+</div>
+<form class="flex flex-col gap-space-md" id="progressForm" onsubmit="event.preventDefault(); alert('Đã lưu tiến độ hiện trường và đồng bộ dữ liệu về trung tâm điều hành!');">
+<!-- Status Selector Radio Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Trạng thái mốc hành trình</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-xs p-space-sm rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-secondary-container/10 has-[:checked]:text-secondary">
+<input checked="" class="w-4 h-4 text-secondary accent-secondary" name="milestone_status" type="radio" value="ongoing"/>
+<span class="font-label-md text-label-md">Đang thực hiện</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-emerald-50 has-[:checked]:text-emerald-700">
+<input class="w-4 h-4 text-emerald-600 accent-emerald-600" name="milestone_status" type="radio" value="completed"/>
+<span class="font-label-md text-label-md">Hoàn thành mốc</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-amber-50 has-[:checked]:text-amber-800">
+<input class="w-4 h-4 text-amber-600 accent-amber-600" name="milestone_status" type="radio" value="delayed"/>
+<span class="font-label-md text-label-md">Chậm trễ có lý do</span>
+</label>
+</div>
+</div>
+<!-- Notes Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="fieldNotes">Ghi chú hiện trường &amp; Tình hình đoàn</label>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/20 transition-all" id="fieldNotes" placeholder="Nhập tình trạng sức khỏe khách, điều kiện thời tiết, phối hợp với tàu/nhà cung cấp..." rows="3">Khách đang chèo thuyền kayak rất hào hứng. Không có ai bị say sóng. Dự kiến 10:15 kết thúc để về tàu tắm tráng và chuẩn bị ăn trưa.</textarea>
+</div>
+<!-- Photo Upload & Quick GPS capture -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md bg-surface-container-low rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">location_on</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Tọa độ GPS tự động</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">20.8415° N, 107.0543° E</p>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Đổi vị trí</button>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">add_photo_alternate</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Ảnh chứng thực</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 tệp đã đính kèm</p>
+</div>
+</div>
+<label class="px-space-md py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm hover:bg-primary/20 cursor-pointer transition-colors">
+<span>Tải thêm</span>
+<input accept="image/*" class="hidden" multiple="" type="file"/>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-lg py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="reset">Hủy thay đổi</button>
+<button class="flex items-center gap-space-xs px-space-xl py-2.5 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary font-label-md text-label-md shadow-sm hover:shadow-md transition-all" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Lưu tiến độ hiện trường</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- RIGHT COLUMN: Incident Quick Report + Passenger Manifest (35% / 4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Incident Quick Report Box -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-error-container/40 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Báo Cáo Sự Cố Nhanh</h2>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Kết nối khẩn cấp với điều hành viên trực</p>
+</div>
+</div>
+</div>
+<form class="flex flex-col gap-space-sm" id="incidentForm" onsubmit="event.preventDefault(); alert('Báo cáo sự cố đã được gửi khẩn cấp tới Quản lý điều hành và Đội Y tế hỗ trợ!');">
+<!-- Type of incident -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Loại sự cố phát sinh</label>
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest transition-colors">
+<option value="weather">Thời tiết biển / Sóng to gió giật</option>
+<option selected="" value="health">Sức khỏe khách (Say sóng, dị ứng...)</option>
+<option value="transport">Phương tiện (Tàu, cano, xe khách)</option>
+<option value="service">Dịch vụ (Phòng, ẩm thực, vé tham quan)</option>
+<option value="other">Khác...</option>
+</select>
+</div>
+<!-- Severity Level -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Mức độ nghiêm trọng</label>
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<label class="py-1.5 px-2 rounded-full bg-surface-container-low font-label-sm text-label-sm cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-amber-100 has-[:checked]:text-amber-900">
+<input checked="" class="hidden" name="severity" type="radio" value="low"/>
+<span>Nhẹ</span>
+</label>
+<label class="py-1.5 px-2 rounded-full bg-surface-container-low font-label-sm text-label-sm cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-orange-100 has-[:checked]:text-orange-900">
+<input class="hidden" name="severity" type="radio" value="medium"/>
+<span>Trung bình</span>
+</label>
+<label class="py-1.5 px-2 rounded-full bg-surface-container-low font-label-sm text-label-sm cursor-pointer hover:bg-surface-container transition-colors has-[:checked]:bg-error-container has-[:checked]:text-on-error-container font-semibold">
+<input class="hidden" name="severity" type="radio" value="high"/>
+<span>Nghiêm trọng</span>
+</label>
+</div>
+</div>
+<!-- Incident Description -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="incidentDesc">Mô tả sự cố chi tiết</label>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest transition-colors" id="incidentDesc" placeholder="Nêu rõ ai, địa điểm nào và diễn biến..." rows="2">Khách Lê Hồng Phong (P.208) bị xước nhẹ ngón chân khi bước xuống kayak.</textarea>
+</div>
+<!-- Handled Method On Site -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="handledMethod">Phương án đã xử lý tại chỗ</label>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded-DEFAULT font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest transition-colors" id="handledMethod" placeholder="Sơ cứu, bố trí nghỉ ngơi, làm việc với nhà cung cấp..." rows="2">Đã sát trùng bằng cồn y tế, băng dán cá nhân. Khách cảm thấy ổn và tiếp tục ngắm cảnh.</textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full mt-1 flex items-center justify-center gap-space-xs py-2.5 rounded-full bg-error text-on-error hover:bg-error/90 font-label-md text-label-md shadow-sm transition-all" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Gửi báo cáo sự cố</span>
+</button>
+</form>
+</div>
+<!-- Passenger Quick List Manifest (28 pax with toggles) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">checklist</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Điểm Danh Khách Nhanh</h2>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Sĩ số đoàn: <span class="font-semibold text-emerald-600">28/28</span> hiện diện</p>
+</div>
+</div>
+<button class="text-secondary hover:text-on-secondary-container font-label-sm text-label-sm font-semibold">Tất cả (28)</button>
+</div>
+<!-- Trưởng đoàn Highlight Banner -->
+<div class="p-space-sm rounded-DEFAULT bg-secondary-container/10 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-label-sm">TĐ</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Trần Anh Tuấn</span>
+<span class="px-1.5 py-0.2 bg-secondary text-white text-[10px] font-bold rounded">Trưởng đoàn</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Cabin 301 | 0912.456.789</p>
+</div>
+</div>
+<a class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all shadow-sm" href="tel:0912456789">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+<!-- Interactive Passenger Roll-Call List (Scrollable) -->
+<div class="max-h-[380px] overflow-y-auto space-y-space-xs pr-1 divide-y divide-surface-container-low">
+<!-- Passenger item 1 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Phạm Thu Trang</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 301 | Nữ (1990) - Ăn chay</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 2 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Lê Hồng Phong</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 208 | Nam (1985) - Sơ cứu nhẹ</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 3 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Nguyễn Mai Hoa</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 208 | Nữ (1988)</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 4 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Hoàng Minh Quân</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 204 | Nam (1979) - Ăn chay</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 5 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Đặng Thảo Vy</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 204 | Nữ (1983)</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 6 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Vũ Đức Hiếu</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 202 | Nam (1995)</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 7 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Đỗ Bảo Ngọc</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 202 | Nữ (1998)</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+<!-- Passenger item 8 -->
+<div class="pt-2 flex items-center justify-between group">
+<div class="flex items-center gap-space-sm">
+<label class="relative flex items-center">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Bùi Quốc Toàn</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Cabin 305 | Nam (1975)</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Có mặt</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Đang hiển thị 8 / 28 khách</span>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline">Mở danh sách đầy đủ (Excel)</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
