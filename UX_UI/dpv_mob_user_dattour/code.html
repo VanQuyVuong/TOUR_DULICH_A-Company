@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "background": "#f9f9ff", "on-primary-container": "#004f5c", "primary": "#006879", "outline-variant": "#bbc9cd", "on-surface-variant": "#3c494d", "tertiary": "#994700", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#321200", "on-secondary-fixed": "#001849", "tertiary-fixed": "#ffdbc8", "error-container": "#ffdad6", "surface": "#f9f9ff", "secondary": "#0050cc", "on-tertiary-fixed-variant": "#753400", "secondary-fixed": "#dae1ff", "on-background": "#121b2e", "surface-container-low": "#f1f3ff", "surface-variant": "#d9e2fc", "on-secondary-fixed-variant": "#003fa4", "outline": "#6c797d", "surface-bright": "#f9f9ff", "surface-container-high": "#e1e8ff", "primary-container": "#00c7e6", "surface-tint": "#006879", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface-container": "#e9edff", "inverse-on-surface": "#edf0ff", "inverse-surface": "#273044", "tertiary-container": "#ff9e60", "on-primary": "#ffffff", "surface-dim": "#d1daf4", "primary-fixed-dim": "#35d8f8", "secondary-fixed-dim": "#b3c5ff", "on-error-container": "#93000a", "on-secondary-container": "#f9f7ff", "on-tertiary-container": "#753500", "tertiary-fixed-dim": "#ffb68b", "inverse-primary": "#35d8f8", "on-surface": "#121b2e", "surface-container-highest": "#d9e2fc", "secondary-container": "#0266ff", "primary-fixed": "a9edff", "on-primary-fixed": "#001f26", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#004e5c" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "2rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "1rem" }, fontFamily: { "headline-lg-mobile": ["Outfit"], "headline-sm": ["Outfit"], "display-lg-mobile": ["Outfit"], "body-md": ["Be Vietnam Pro"], "label-lg": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "headline-lg": ["Outfit"], "display-lg": ["Outfit"], "body-sm": ["Be Vietnam Pro"], "headline-md": ["Outfit"], "label-sm": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"] }, fontSize: { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2 min-w-0"><button aria-label="Quay lại" class="w-11 h-11 -ml-1.5 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00C7E6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Đặt Tour</h1></div><div class="flex items-center gap-2 shrink-0"><button aria-label="Hủy hoặc thoát" class="font-label-lg text-label-lg text-secondary px-3 py-1.5 rounded-full hover:bg-secondary-fixed/50 transition-colors" type="button">Hủy</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-safe"><div class="flex flex-col w-full pb-32">
+<!-- Stepper Header -->
+<div class="px-4 pt-4 pb-2">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center justify-between relative mb-2">
+<div class="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-1 bg-surface-container -z-0">
+<div class="h-full bg-secondary w-1/3 rounded-full transition-all duration-300"></div>
+</div>
+<!-- Step 1: Liên hệ (Done) -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-xs shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Liên hệ</span>
+</div>
+<!-- Step 2: Hành khách (Active) -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold ring-4 ring-primary-container/20">
+            2
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Hành khách</span>
+</div>
+<!-- Step 3: Xác nhận -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container text-outline flex items-center justify-center text-xs font-medium">
+            3
+          </div>
+<span class="font-label-sm text-label-sm text-outline">Xác nhận</span>
+</div>
+<!-- Step 4: Thanh toán -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container text-outline flex items-center justify-center text-xs font-medium">
+            4
+          </div>
+<span class="font-label-sm text-label-sm text-outline">Thanh toán</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="inline-flex items-center gap-1.5 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+          Giữ chỗ trong 15:00
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">
+          Bước 2/4
+        </span>
+</div>
+</div>
+</div>
+<!-- Tour Summary Card -->
+<div class="px-4 py-2">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm relative overflow-hidden">
+<div class="flex gap-3">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Luxurious 5-star white yacht sailing through dramatic limestone karsts of Ha Long Bay Vietnam, calm turquoise water, morning soft sunlight, aerial cinematic perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkpaJ2eGH7Wxs3FKHwqPsqk3zk-7ZgssH4-tYgumB2axWjclZ9VePn9sFKuWadH4iGbWJ3dyieKa6BgZ-EzH7nRbj0Gqf0izZLb0Be6k6_ZUYscxOP571KN_tg5GAEC6pQL0NqKDDspX1VjWpXSLPpvaEN4i397BmZa4tkB48MtuhiMrSAE2wHRLkjNAVlyLZojkxU5aEYtjvDfKqYfpF6ImShsWv9evB9bSy6ROcwo130Ar7Xldq1ng"/>
+<span class="absolute top-1 left-1 bg-secondary-container/90 backdrop-blur-xs text-on-secondary-container text-[10px] font-bold px-1.5 py-0.5 rounded-sm">
+            5 SAO
+          </span>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-[14px] text-primary">tag</span>
+<span class="truncate">DPV-DEP-2026-HL01</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface line-clamp-2 leading-tight">
+              Di Sản Vịnh Hạ Long - Nghỉ Dưỡng Du Thuyền Diamond Luxury
+            </h2>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Đơn giá/khách:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">3.490.000 đ</span>
+</div>
+</div>
+</div>
+<div class="mt-3.5 pt-3 bg-surface-container-low rounded-lg p-2.5 flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">calendar_month</span>
+<span class="font-medium text-on-surface">15/11/2026 - 17/11/2026 (3N2Đ)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">location_on</span>
+<span class="line-clamp-1">Tập trung: Nhà hát Lớn Hà Nội (07:30)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 1: Thông tin người liên hệ -->
+<div class="px-4 py-2">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">contact_phone</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Người liên hệ</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium bg-primary-fixed/20 px-2 py-0.5 rounded-full">
+          Đại diện đặt tour
+        </span>
+</div>
+<div class="space-y-3">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Họ và tên *</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2.5 text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest transition-colors outline-none focus:ring-2 focus:ring-primary" type="text" value="Trần Đình Quang"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Số điện thoại *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2.5 text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest transition-colors outline-none focus:ring-2 focus:ring-primary" type="tel" value="0912.456.789"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Email *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2.5 text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest transition-colors outline-none focus:ring-2 focus:ring-primary" type="email" value="quang.td@gmail.com"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Ghi chú &amp; Yêu cầu đặc biệt</label>
+<textarea class="w-full bg-surface-container-low rounded-lg p-3 text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest transition-colors outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Ví dụ: phòng tầng cao, chế độ ăn chay, hỗ trợ di chuyển..." rows="2">Ăn chay trường 1 khách, ưu tiên cabin tầng 2 view biển thoáng đãng.</textarea>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Danh sách hành khách -->
+<div class="px-4 py-2">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Danh sách hành khách</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">2 Khách</span>
+</div>
+<!-- Quantity Counters -->
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-3 mb-4">
+<!-- Người lớn -->
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Người lớn</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Từ 12 tuổi trở lên</div>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Giảm người lớn" class="w-8 h-8 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-xs active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-6 text-center font-headline-sm text-headline-sm text-on-surface font-bold">2</span>
+<button aria-label="Tăng người lớn" class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Trẻ em -->
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Trẻ em</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Từ 5 - 11 tuổi (75% giá)</div>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Giảm trẻ em" class="w-8 h-8 rounded-full bg-surface-container-lowest text-outline-variant flex items-center justify-center opacity-60 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-6 text-center font-headline-sm text-headline-sm text-outline font-medium">0</span>
+<button aria-label="Tăng trẻ em" class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center shadow-xs active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Em bé -->
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Em bé</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dưới 5 tuổi (Miễn phí)</div>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Giảm em bé" class="w-8 h-8 rounded-full bg-surface-container-lowest text-outline-variant flex items-center justify-center opacity-60 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-6 text-center font-headline-sm text-headline-sm text-outline font-medium">0</span>
+<button aria-label="Tăng em bé" class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center shadow-xs active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Passenger Cards List -->
+<div class="space-y-3">
+<!-- Passenger 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-3 shadow-xs bg-gradient-to-r from-secondary/5 to-transparent">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[11px]">1</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Người lớn 1 (Trưởng đoàn)</span>
+</div>
+<button class="text-secondary font-label-sm text-label-sm flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+              Lấy từ liên hệ
+            </button>
+</div>
+<div class="space-y-2.5">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-0.5">Họ và tên *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary uppercase" type="text" value="TRẦN ĐÌNH QUANG"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-0.5">Số CCCD / Passport *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" type="text" value="001090012345"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-0.5">Ngày sinh *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" type="text" value="12/08/1990"/>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Giới tính:</span>
+<label class="flex items-center gap-1 text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="accent-secondary w-4 h-4" name="gender_p1" type="radio"/>
+                Nam
+              </label>
+<label class="flex items-center gap-1 text-body-sm text-on-surface cursor-pointer">
+<input class="accent-secondary w-4 h-4" name="gender_p1" type="radio"/>
+                Nữ
+              </label>
+</div>
+</div>
+</div>
+<!-- Passenger 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-3 shadow-xs">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[11px]">2</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Người lớn 2</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Đã điền đầy đủ</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-0.5">Họ và tên *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary uppercase" type="text" value="LÊ THỊ MAI HƯƠNG"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-0.5">Số CCCD / Passport *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" type="text" value="001192008765"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-0.5">Ngày sinh *</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" type="text" value="24/05/1992"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Giới tính:</span>
+<label class="flex items-center gap-1 text-body-sm text-on-surface cursor-pointer">
+<input class="accent-secondary w-4 h-4" name="gender_p2" type="radio"/>
+                  Nam
+                </label>
+<label class="flex items-center gap-1 text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="accent-secondary w-4 h-4" name="gender_p2" type="radio"/>
+                  Nữ
+                </label>
+</div>
+<div class="flex items-center gap-1.5 bg-tertiary-fixed/30 text-on-tertiary-fixed-variant px-2 py-0.5 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span>Ăn chay</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Passenger Button -->
+<button class="w-full mt-3 py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container text-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+        + Thêm hành khách mới
+      </button>
+</div>
+</div>
+<!-- Price Breakdown Summary -->
+<div class="px-4 py-2">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span>
+          Chi tiết thanh toán
+        </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">VND</span>
+</div>
+<div class="space-y-2 font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">2x Vé người lớn (3.490.000 đ)</span>
+<span class="text-on-surface font-medium">6.980.000 đ</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant flex items-center gap-1">
+            Bảo hiểm du lịch nội địa
+            <span class="material-symbols-outlined text-[14px] text-primary" title="Bảo hiểm Bảo Việt mức 100tr/vụ">info</span>
+</span>
+<span class="text-primary font-semibold">Đã bao gồm</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Phí dịch vụ &amp; VAT (8%)</span>
+<span class="text-on-surface font-medium">0 đ</span>
+</div>
+<div class="flex justify-between items-center bg-primary-fixed/20 -mx-1 px-2 py-1.5 rounded-md">
+<div class="flex items-center gap-1 text-on-primary-fixed-variant font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">redeem</span>
+            Voucher ưu đãi DPV-SUMMER
+          </div>
+<span class="text-secondary font-bold">-300.000 đ</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-baseline justify-between bg-surface-container-low -mx-4 -mb-4 p-4 rounded-b-xl">
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Tổng thanh toán tạm tính</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Đã bao gồm đầy đủ thuế phí</div>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-secondary font-extrabold tracking-tight">
+            6.680.000 đ
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges & Guarantee -->
+<div class="px-4 py-3">
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-left leading-tight">Bảo mật thông tin thanh toán 100%</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">support_agent</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-left leading-tight">Hỗ trợ 24/7 trong suốt hành trình</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.06)] pb-safe">
+<div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tạm tính</span>
+<span class="bg-secondary/10 text-secondary font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold">Giảm 300k</span>
+</div>
+<div class="font-headline-md text-headline-md text-secondary font-bold leading-none">
+          6.680.000 đ
+        </div>
+</div>
+<button class="flex-1 max-w-[210px] h-12 bg-secondary text-on-secondary rounded-full font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-secondary-container active:scale-95 transition-all" type="button">
+<span>Tiếp tục thanh toán</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for responsive button states
+  document.addEventListener('DOMContentLoaded', () => {
+    const actionBtn = document.querySelector('button.bg-secondary');
+    if (actionBtn) {
+      actionBtn.addEventListener('click', () => {
+        actionBtn.classList.add('opacity-90');
+      });
+    }
+  });
+</script></main></body></html>

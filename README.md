@@ -20,11 +20,11 @@ Hệ thống hỗ trợ 3 mô hình chọn tour linh hoạt đáp ứng đa dạ
 
 Tất cả các công nghệ, framework và thư viện được sử dụng trong dự án đều cập nhật các phiên bản mới nhất:
 
-* **Backend API:** .NET 10.0 (C# ASP.NET Core Web API), Entity Framework Core 9.0, JWT Authentication, AutoMapper, FluentValidation, SignalR (Real-time notifications & GPS).
+* **Backend API:** .NET 10.0 (C# ASP.NET Core Web API), MongoDB .NET Driver (mục tiêu chuyển đổi), JWT Authentication, AutoMapper, FluentValidation, SignalR (Real-time notifications & GPS).
 * **Frontend Web (Client & Dashboard):** React 19 (Vite), Tailwind CSS v4, React Router v7, Lucide React / React Icons, TanStack Query (React Query v5), Axios.
 * **Desktop App (Điều hành & Quản trị nội bộ):** WPF (.NET 10.0 / C#), MaterialDesignInXamlToolkit, CommunityToolkit.Mvvm.
 * **Mobile App (Dành cho Khách hàng & HDV):** React Native (Expo SDK 52+ / CLI), React Navigation v7, Tailwind CSS (NativeWind v4).
-* **Database:** MySQL 8.4 LTS / 9.x.
+* **Database:** MongoDB. Schema SQL cũ chỉ dùng làm nguồn đối chiếu nghiệp vụ trong quá trình chuyển đổi.
 
 ---
 
@@ -36,20 +36,35 @@ DPV-Travel-Project/
 ├── DPV.Web/               # Web Portal & Admin Dashboard (React + Tailwind CSS)
 ├── DPV.Desktop/           # App Quản trị & Điều hành nội bộ (WPF .NET 9)
 ├── DPV.Mobile/            # Mobile App cho Khách hàng & HDV (React Native)
-├── *.sql                  # Scripts khởi tạo CSDL và Seed Data ở thư mục gốc
+├── DPV.Analysis/          # Phân tích, script MongoDB và hướng dẫn khởi tạo CSDL
 └── README.md              # Tài liệu hướng dẫn dự án
 ```
 
 ---
 📦 Hướng dẫn Khởi chạy Ứng dụng
-1. Chạy Backend API (.NET 10.0)
-Cấu hình chuỗi kết nối MySQL trong DPV.Backend/appsettings.json:
+1. Khởi tạo MongoDB
+
+Hướng dẫn cho team và script bootstrap nằm tại:
+
+```text
+DPV.Analysis/HUONG_DAN_CHAY_MONGODB.md
+DPV.Analysis/DPV_TourDuLich_MONGODB_COMPASS_BOOTSTRAP.js
+```
+
+Database phát triển mới là `DPV_TourDuLich_Mongo`, tách biệt với database chuyển đổi SQL cũ `DPV_TourDuLich`.
+
+2. Chạy Backend API (.NET 10.0)
+
+Khi Backend hoàn tất chuyển sang MongoDB Driver, cấu hình local sẽ có dạng:
 ```text
 JSON
-"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=DPV_Travel_DB;User=root;Password=your_password;"
+"MongoDb": {
+  "ConnectionString": "mongodb://localhost:27017",
+  "DatabaseName": "DPV_TourDuLich_Mongo"
 }
 ```
+
+> Không commit URI có username/password. Backend hiện còn phần cấu hình MySQL cũ; task chuyển sang MongoDB Driver cần hoàn tất trước khi chạy tính năng mới.
 Truy cập thư mục backend và khởi chạy:
 ```text
 Bash

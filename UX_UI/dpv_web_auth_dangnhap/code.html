@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Đăng nhập - DPV TourDuLich</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#e1e8ff",
+            "primary-container": "#00c7e6",
+            "on-primary": "#ffffff",
+            "outline-variant": "#E5EAF2",
+            "on-background": "#121b2e",
+            "on-surface-variant": "#4E5D78",
+            "background": "#F7F9FC",
+            "secondary": "#0066FF",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#0066FF",
+            "surface-container-low": "#F8FAFC",
+            "outline": "#D0D7E2",
+            "on-surface": "#121B2E",
+            "error": "#E53935",
+            "surface": "#ffffff",
+            "cyan-accent": "#00C7E6"
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.25rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "body": ["Be Vietnam Pro", "sans-serif"],
+            "heading": ["Outfit", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F7F9FC] text-on-surface font-body antialiased min-h-screen flex flex-col selection:bg-primary/10 selection:text-primary">
+<!-- Header Tối Giản -->
+<header class="w-full bg-white/90 backdrop-blur-md border-b border-[#E5EAF2] sticky top-0 z-40 transition-all duration-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Logo DPV TourDuLich -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-11 h-11 rounded-xl bg-white border border-[#E5EAF2] shadow-sm flex items-center justify-center p-1 overflow-hidden transition-transform group-hover:scale-105">
+<img alt="DPV TourDuLich Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/>
+</div>
+<div class="flex flex-col">
+<span class="font-heading font-bold text-lg tracking-tight text-[#121B2E]">DPV <span class="text-[#0066FF]">TourDuLich</span></span>
+<span class="text-xs text-slate-500 font-medium tracking-wide">Cổng dịch vụ du lịch thông minh</span>
+</div>
+</a>
+<!-- Right Actions: Hotline, Language & Back Home -->
+<div class="flex items-center gap-3 sm:gap-5">
+<!-- Hotline 24/7 -->
+<a class="hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#F4F7FB] border border-[#E5EAF2] text-[#121B2E] hover:border-[#0066FF]/40 transition-colors" href="tel:19006868">
+<span class="material-symbols-outlined text-[#0066FF] text-[18px]">support_agent</span>
+<div class="text-left text-xs leading-none">
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Hotline</span>
+<span class="font-bold text-slate-800">1900 6868</span>
+</div>
+</a>
+<!-- Language Switcher -->
+<div class="flex items-center bg-[#F4F7FB] border border-[#E5EAF2] rounded-lg p-0.5 text-xs font-semibold">
+<button class="px-2.5 py-1 rounded-md bg-white text-[#0066FF] shadow-xs" type="button">VN</button>
+<button class="px-2.5 py-1 rounded-md text-slate-500 hover:text-[#121B2E] transition-colors" type="button">EN</button>
+</div>
+<!-- Back to Home CTA -->
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#0066FF] transition-colors py-1.5 px-3 rounded-lg hover:bg-blue-50/60" href="#">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span class="hidden sm:inline">Về trang chủ</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex items-center justify-center py-8 sm:py-12 px-4 sm:px-6">
+<div class="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 rounded-2xl bg-white border border-[#E5EAF2] shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+<!-- Left Showcase Banner (5 cols on lg) -->
+<div class="lg:col-span-5 bg-gradient-to-br from-[#F0F6FF] via-[#F8FBFF] to-[#E9F3FF] p-6 sm:p-8 lg:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#E5EAF2] relative">
+<!-- Subtle glow effects -->
+<div class="absolute top-0 right-0 w-56 h-56 bg-cyan-200/25 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-60 h-60 bg-blue-300/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10">
+<!-- Small Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/80 border border-blue-100 text-[#0066FF] text-xs font-semibold mb-6 shadow-xs backdrop-blur-sm">
+<span class="material-symbols-outlined text-[15px] text-[#00C7E6]">travel_explore</span>
+<span>Trải nghiệm du lịch thời đại mới</span>
+</div>
+<!-- Slogan -->
+<h2 class="font-heading font-bold text-2xl sm:text-3xl text-[#121B2E] tracking-tight leading-snug">
+            Khám phá hành trình,<br/>
+<span class="text-[#0066FF] bg-gradient-to-r from-[#0066FF] to-[#00C7E6] bg-clip-text text-transparent">kết nối trải nghiệm</span>
+</h2>
+<p class="text-sm text-slate-600 mt-3 leading-relaxed">
+            Đăng nhập để quản lý lịch trình, nhận gợi ý du lịch thông minh và đồng bộ ưu đãi thành viên trên mọi nền tảng.
+          </p>
+<!-- Travel Destination Preview Card -->
+<div class="mt-6 rounded-xl overflow-hidden border border-white/80 shadow-md relative group">
+<div class="h-44 w-full overflow-hidden">
+<img alt="Vịnh Hạ Long" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdaNwj4dLT3WYPYPdtkl6Trc0fMAl26TQQYrlPexufVI-M4Elncnot1cQl2l7ZDkngWgfpyYT9Mw_yP2WCrgQ6QGeRVOQOklElW_MyFjKLEGYFWDXQ0oIt6iexIS3Ov5GC6551Ej_591d--ObFhkbL0SjTgSig8pwJaZzAeooSwH5QGa-tQQe9HvJh26ul8eefMp0_wZRkKwKZAj2GfN1ZN4CiHKSc4kICFBo2hxcyZDkDqnf0PnUcwA"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+<div class="flex items-center gap-1.5 font-medium drop-shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-[#00C7E6]">location_on</span>
+<span>Vịnh Hạ Long, Việt Nam</span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-white/20 backdrop-blur-md text-[11px] font-semibold border border-white/30">Tour Thịnh Hành</span>
+</div>
+</div>
+</div>
+<!-- Highlights & Value Props -->
+<div class="relative z-10 pt-6 mt-6 border-t border-blue-100/80">
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-white/80 backdrop-blur-sm p-3.5 rounded-xl border border-white shadow-xs">
+<div class="flex items-center gap-1.5 text-[#0066FF] mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-heading font-bold text-base text-slate-800">500+ Tour</span>
+</div>
+<p class="text-[11px] text-slate-500 font-medium">Lịch khởi hành liên tục</p>
+</div>
+<div class="bg-white/80 backdrop-blur-sm p-3.5 rounded-xl border border-white shadow-xs">
+<div class="flex items-center gap-1.5 text-[#00C7E6] mb-1">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="font-heading font-bold text-base text-slate-800">Tức thì</span>
+</div>
+<p class="text-[11px] text-slate-500 font-medium">Xác nhận vé &amp; voucher 30s</p>
+</div>
+</div>
+<p class="text-xs text-slate-500 mt-4 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-green-500 text-[16px]">check_circle</span>
+            Đồng hành cùng 45.000+ thành viên viễn du
+          </p>
+</div>
+</div>
+<!-- Right Login Form (7 cols on lg) -->
+<div class="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-center bg-white">
+<!-- Form Header -->
+<div class="mb-6">
+<h1 class="font-heading font-bold text-2xl sm:text-3xl text-[#121B2E] tracking-tight">Đăng nhập DPV</h1>
+<p class="text-sm text-slate-500 mt-1">Chào mừng bạn quay trở lại, hãy tiếp tục hành trình của bạn!</p>
+</div>
+<!-- Alert Notification (Client script handled) -->
+<div class="mb-5 hidden transition-all duration-200" id="auth-alert">
+<div class="flex items-center justify-between p-3 rounded-xl bg-blue-50 border border-blue-200 text-slate-800 text-xs sm:text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#0066FF] text-[20px]" id="alert-icon">info</span>
+<span class="font-medium" id="alert-msg">Thông báo hệ thống</span>
+</div>
+<button class="text-slate-400 hover:text-slate-600 p-0.5" onclick="document.getElementById('auth-alert').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Role Selector Tab (Khách hàng / Nhân sự nội bộ) -->
+<div class="bg-[#F4F7FB] p-1 rounded-xl grid grid-cols-2 gap-1 mb-6 border border-[#E5EAF2]">
+<button class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-150 bg-white text-[#0066FF] shadow-xs border border-slate-200/60" id="role-tab-cust" onclick="setRole('CUSTOMER')" type="button">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<span>Khách hàng</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-150" id="role-tab-staff" onclick="setRole('STAFF')" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Nhân sự / Nội bộ</span>
+</button>
+</div>
+<!-- Form Elements -->
+<form class="space-y-4" onsubmit="handleLoginSubmit(event)">
+<!-- Email / Phone Input -->
+<div>
+<label class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5" for="login-identifier">
+              Email hoặc Số điện thoại <span class="text-red-500">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-slate-400 pointer-events-none text-[20px]">person_outline</span>
+<input class="w-full pl-11 pr-4 py-2.5 sm:py-3 bg-white border border-[#E5EAF2] rounded-xl text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/15 transition-all shadow-xs" id="login-identifier" placeholder="vidu@email.com hoặc 0912 345 678" required="" type="text"/>
+</div>
+</div>
+<!-- Password Input -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="block text-xs sm:text-sm font-semibold text-slate-700" for="login-password">
+                Mật khẩu <span class="text-red-500">*</span>
+</label>
+<span class="hidden items-center gap-1 text-[11px] text-amber-600 font-medium" id="caps-warning">
+<span class="material-symbols-outlined text-[13px]">warning</span> Caps Lock đang bật
+              </span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-slate-400 pointer-events-none text-[20px]">lock_outline</span>
+<input class="w-full pl-11 pr-11 py-2.5 sm:py-3 bg-white border border-[#E5EAF2] rounded-xl text-slate-900 placeholder:text-slate-400 text-sm focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/15 transition-all shadow-xs" id="login-password" onkeyup="checkCapsLock(event)" placeholder="Nhập mật khẩu của bạn" required="" type="password"/>
+<button class="absolute right-3.5 text-slate-400 hover:text-slate-600 transition-colors p-0.5" onclick="togglePasswordVisibility()" title="Hiện/Ẩn mật khẩu" type="button">
+<span class="material-symbols-outlined text-[20px]" id="pwd-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Aux: Remember Me & Forgot Password -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-[#0066FF] border-[#D0D7E2] focus:ring-[#0066FF]/20 focus:ring-offset-0" id="remember-me" type="checkbox"/>
+<span class="text-xs sm:text-sm text-slate-600 font-medium">Ghi nhớ đăng nhập</span>
+</label>
+<a class="text-xs sm:text-sm font-semibold text-[#0066FF] hover:text-blue-700 transition-colors" href="#">
+              Quên mật khẩu?
+            </a>
+</div>
+<!-- Primary Submit CTA Button -->
+<button class="w-full mt-2 py-3 px-4 rounded-xl bg-[#0066FF] hover:bg-[#0055D4] text-white font-semibold text-sm sm:text-base flex items-center justify-center gap-2 transition-all shadow-sm hover:shadow-md hover:shadow-blue-500/20 active:scale-[0.99]" id="btn-login-submit" type="submit">
+<span class="material-symbols-outlined text-[20px]">login</span>
+<span>Đăng nhập ngay</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="w-full border-t border-[#E5EAF2]"></div>
+<span class="absolute bg-white px-3 text-xs text-slate-400 font-medium uppercase tracking-wider">Hoặc tiếp tục qua</span>
+</div>
+<!-- Social SSO Buttons -->
+<div class="grid grid-cols-2 gap-3">
+<button class="flex items-center justify-center gap-2.5 py-2.5 px-3 rounded-xl bg-white border border-[#E5EAF2] hover:bg-slate-50 hover:border-slate-300 text-slate-700 text-xs sm:text-sm font-semibold transition-all shadow-xs" onclick="triggerSSO('Google')" type="button">
+<svg class="w-4 h-4 shrink-0" viewbox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.15z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.94H1.27v3.14C3.25 21.28 7.32 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.26c-.25-.72-.38-1.49-.38-2.26s.13-1.54.38-2.26V6.6H1.27C.46 8.22 0 10.05 0 12s.46 3.78 1.27 5.4l4.01-3.14z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.32 0 3.25 2.72 1.27 6.6l4.01 3.14c.95-2.84 3.6-4.99 6.72-4.99z" fill="#EA4335"></path>
+</svg>
+<span>Google</span>
+</button>
+<button class="flex items-center justify-center gap-2.5 py-2.5 px-3 rounded-xl bg-white border border-[#E5EAF2] hover:bg-slate-50 hover:border-slate-300 text-slate-700 text-xs sm:text-sm font-semibold transition-all shadow-xs" onclick="triggerSSO('Apple ID')" type="button">
+<svg class="w-4 h-4 fill-current shrink-0 text-slate-900" viewbox="0 0 170 170">
+<path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.08-7.7-7.94-12.04-14.58-6.19-9.53-11.04-20.4-14.55-32.61-3.52-12.22-5.28-23.75-5.28-34.61 0-16.14 4.31-29.41 12.93-39.81 8.62-10.4 19.34-15.7 32.16-15.9 4.89 0 10.4 1.25 16.53 3.76 6.13 2.5 10.02 3.82 11.66 3.96 1.41-.14 5.37-1.48 11.88-4.03 6.51-2.55 12.05-3.71 16.63-3.48 12.63.76 22.86 5.34 30.68 13.73-10.99 6.64-16.36 15.89-16.12 27.76.24 9.53 3.94 17.55 11.1 24.08 7.16 6.53 15.65 10.37 25.46 11.53-2.17 6.42-4.66 12.83-7.47 19.23zM119.22 33.15c0-7.39 2.66-14.41 7.98-21.05 5.32-6.64 11.83-10.96 19.53-12.95.87 7.07-1.25 14.19-6.35 21.36-5.1 7.17-11.75 11.45-19.95 12.85-.22-.07-.58-.14-1.21-.21z"></path>
+</svg>
+<span>Apple</span>
+</button>
+</div>
+<!-- Quick Mock Tester (Compact for FE demo) -->
+<div class="mt-6 p-2.5 rounded-xl bg-[#F8FAFC] border border-[#E5EAF2] text-xs">
+<div class="flex items-center justify-between mb-1.5 text-slate-500 font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-[#0066FF]">bolt</span> Tài khoản mẫu thử nghiệm</span>
+<span class="text-[10px] text-slate-400">1-click fill</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1 px-2 rounded-lg bg-white border border-[#E5EAF2] hover:border-[#0066FF] text-slate-700 hover:text-[#0066FF] font-medium text-center transition-colors truncate" onclick="fillMock('khachhang@gmail.com', 'Pass@123', 'CUSTOMER')" type="button">Khách</button>
+<button class="py-1 px-2 rounded-lg bg-white border border-[#E5EAF2] hover:border-[#0066FF] text-slate-700 hover:text-[#0066FF] font-medium text-center transition-colors truncate" onclick="fillMock('admin@dpvtravel.vn', 'Admin@2025!', 'STAFF')" type="button">Admin</button>
+<button class="py-1 px-2 rounded-lg bg-white border border-[#E5EAF2] hover:border-[#0066FF] text-slate-700 hover:text-[#0066FF] font-medium text-center transition-colors truncate" onclick="fillMock('dieuhanh@dpvtravel.vn', 'Manager@2025!', 'STAFF')" type="button">Quản lý</button>
+<button class="py-1 px-2 rounded-lg bg-white border border-[#E5EAF2] hover:border-[#0066FF] text-slate-700 hover:text-[#0066FF] font-medium text-center transition-colors truncate" onclick="fillMock('hdv.nam@dpvtravel.vn', 'Guide@2025!', 'STAFF')" type="button">HDV</button>
+</div>
+</div>
+<!-- Register Link CTA -->
+<div class="mt-6 text-center text-xs sm:text-sm text-slate-600">
+          Chưa có tài khoản? 
+          <a class="text-[#0066FF] hover:text-blue-700 font-semibold inline-flex items-center gap-1 hover:underline ml-1" href="#">
+            Đăng ký ngay <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Tối Giản -->
+<footer class="w-full border-t border-[#E5EAF2] bg-white py-4 mt-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-slate-700">DPV TourDuLich</span>
+<span>© 2025 Bản quyền thuộc về DPV Corporation.</span>
+</div>
+<div class="flex items-center gap-4 text-xs font-medium">
+<span class="inline-flex items-center gap-1 text-slate-600">
+<span class="material-symbols-outlined text-[16px] text-[#0066FF]">lock</span>
+          Bảo mật SSL 256-bit
+        </span>
+<a class="hover:text-[#0066FF] transition-colors" href="#">Điều khoản dịch vụ</a>
+<a class="hover:text-[#0066FF] transition-colors" href="#">Chính sách bảo mật</a>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script>
+    let activeRole = 'CUSTOMER';
+
+    function setRole(role) {
+      activeRole = role;
+      const custBtn = document.getElementById('role-tab-cust');
+      const staffBtn = document.getElementById('role-tab-staff');
+      const input = document.getElementById('login-identifier');
+
+      if (role === 'CUSTOMER') {
+        custBtn.className = "flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-150 bg-white text-[#0066FF] shadow-xs border border-slate-200/60";
+        staffBtn.className = "flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-150";
+        input.placeholder = "vidu@email.com hoặc 0912 345 678";
+      } else {
+        staffBtn.className = "flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-150 bg-white text-[#0066FF] shadow-xs border border-slate-200/60";
+        custBtn.className = "flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-all duration-150";
+        input.placeholder = "ma_nhan_vien@dpvtravel.vn hoặc username";
+      }
+    }
+
+    function togglePasswordVisibility() {
+      const pwdInput = document.getElementById('login-password');
+      const icon = document.getElementById('pwd-icon');
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        pwdInput.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    function checkCapsLock(event) {
+      const warning = document.getElementById('caps-warning');
+      if (event.getModifierState && event.getModifierState('CapsLock')) {
+        warning.classList.remove('hidden');
+        warning.classList.add('inline-flex');
+      } else {
+        warning.classList.remove('inline-flex');
+        warning.classList.add('hidden');
+      }
+    }
+
+    function fillMock(username, pwd, role) {
+      setRole(role);
+      document.getElementById('login-identifier').value = username;
+      document.getElementById('login-password').value = pwd;
+      showAlert('info', 'Đã điền tài khoản mẫu: ' + username);
+    }
+
+    function triggerSSO(provider) {
+      showAlert('info', 'Đang kết nối xác thực bảo mật với ' + provider + '...');
+    }
+
+    function showAlert(type, message) {
+      const alertBox = document.getElementById('auth-alert');
+      const alertMsg = document.getElementById('alert-msg');
+      const alertIcon = document.getElementById('alert-icon');
+      alertMsg.textContent = message;
+
+      if (type === 'error') {
+        alertIcon.textContent = 'error';
+        alertIcon.className = 'material-symbols-outlined text-red-500 text-[20px]';
+        alertBox.firstElementChild.className = 'flex items-center justify-between p-3 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs sm:text-sm';
+      } else if (type === 'success') {
+        alertIcon.textContent = 'check_circle';
+        alertIcon.className = 'material-symbols-outlined text-green-500 text-[20px]';
+        alertBox.firstElementChild.className = 'flex items-center justify-between p-3 rounded-xl bg-green-50 border border-green-200 text-green-800 text-xs sm:text-sm';
+      } else {
+        alertIcon.textContent = 'info';
+        alertIcon.className = 'material-symbols-outlined text-[#0066FF] text-[20px]';
+        alertBox.firstElementChild.className = 'flex items-center justify-between p-3 rounded-xl bg-blue-50 border border-blue-200 text-slate-800 text-xs sm:text-sm';
+      }
+      alertBox.classList.remove('hidden');
+    }
+
+    function handleLoginSubmit(event) {
+      event.preventDefault();
+      const identifier = document.getElementById('login-identifier').value.trim();
+      const password = document.getElementById('login-password').value;
+      const submitBtn = document.getElementById('btn-login-submit');
+
+      if (!identifier || !password) {
+        showAlert('error', 'Vui lòng nhập đầy đủ thông tin đăng nhập.');
+        return;
+      }
+
+      const origText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span><span>Đang đăng nhập...</span>';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = origText;
+        showAlert('success', 'Đăng nhập thành công! Chào mừng ' + identifier);
+      }, 800);
+    }
+  </script>
+</body></html>

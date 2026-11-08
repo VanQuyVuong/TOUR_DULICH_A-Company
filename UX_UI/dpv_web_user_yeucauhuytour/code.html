@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>DPV TourDuLich - Nền Tảng Du Lịch Công Nghệ</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed":"#a9edff","on-primary-fixed-variant":"#004e5c","on-tertiary-fixed-variant":"#753400","surface":"#f9f9ff","secondary":"#0050cc","surface-bright":"#f9f9ff","primary-container":"#00c7e6","tertiary":"#994700","error-container":"#ffdad6","on-surface-variant":"#3c494d","primary":"#006879","tertiary-fixed-dim":"#ffb68b","error":"#ba1a1a","inverse-primary":"#35d8f8","surface-variant":"#d9e2fc","secondary-fixed":"#dae1ff","on-surface":"#121b2e","surface-container-lowest":"#ffffff","on-primary":"#ffffff","on-primary-fixed":"#001f26","surface-container-highest":"#d9e2fc","secondary-fixed-dim":"#b3c5ff","on-tertiary-container":"#753500","on-error":"#ffffff","outline-variant":"#bbc9cd","surface-tint":"#006879","on-background":"#121b2e","surface-dim":"#d1daf4","inverse-on-surface":"#edf0ff","outline":"#6c797d","on-secondary-fixed":"#001849","tertiary-container":"#ff9e60","on-secondary-fixed-variant":"#003fa4","background":"#f9f9ff","on-primary-container":"#004f5c","primary-fixed-dim":"#35d8f8","surface-container-high":"#e1e8ff","on-tertiary":"#ffffff","on-secondary":"#ffffff","on-tertiary-fixed":"#321200","surface-container-low":"#f1f3ff","on-secondary-container":"#f9f7ff","tertiary-fixed":"#ffdbc8","on-error-container":"#93000a","inverse-surface":"#273044","surface-container":"#e9edff","secondary-container":"#0266ff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter":"1.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","margin":"2rem","space-xs":"0.25rem"},"fontFamily":{"label-sm":["Be Vietnam Pro"],"headline-lg-mobile":["Outfit"],"display-lg":["Outfit"],"headline-sm":["Outfit"],"label-md":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"headline-md":["Outfit"],"headline-lg":["Outfit"],"body-md":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"display-lg-mobile":["Outfit"]},"fontSize":{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"0","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" data-path="trang-chu" href="#"><img alt="DPV TourDuLich" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvdgGdVFs9HdYOfyZlX318wsZ68mtZF4Hn0_o3UMlioMEqqMdOS6wizvNtBVW1sPJuwD8EgbRUUpHycV0_yxp1YphOvzhHSV-mc4Dy33O4VEPeOjS_7UjheDihcY_ArF5lqBz_SVS2DpXVhhC9F_zO4Fjv4rEyOwx9UsOWA7iIyG-RlrywFl74O_VCmiY8VYrr9wuOvUE3GLd2JtAX5Bdb0E_3WdGF-HL8T3_OFO8ueiznIVjQzC-yCw"/><span class="font-headline-sm text-headline-sm text-secondary-container tracking-tight hidden sm:inline-block">DPV TourDuLich</span></a><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-secondary-container font-semibold"><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-xs py-space-sm transition-colors" data-path="trang-chu" href="#">Trang chủ</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-xs py-space-sm transition-colors" data-path="tour-trong-nuoc" href="#">Tour trong nước</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-xs py-space-sm transition-colors" data-path="tour-quoc-te" href="#">Tour quốc tế</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-xs py-space-sm transition-colors" data-path="yeu-cau-tour-rieng" href="#">Yêu cầu tour riêng</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg px-space-xs py-space-sm transition-colors" data-path="cam-nang-du-lich" href="#">Cẩm nang du lịch</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden md:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-secondary-container font-label-md text-label-md hover:bg-surface-container hover:text-secondary-container transition-colors" href="tel:19006868"><span class="material-symbols-outlined text-[18px]">call</span><span>1900 6868</span></a><button aria-label="Tìm kiếm tour" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><div class="relative group"><button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">language</span><span>VN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="absolute right-0 top-full mt-space-xs hidden group-hover:block w-28 bg-surface-container-lowest rounded-DEFAULT shadow-[0_12px_24px_-6px_rgba(0,102,255,0.08)] py-space-xs z-50"><a class="block px-space-md py-space-xs font-label-md text-label-md text-secondary-container bg-surface-container-low" href="#">Tiếng Việt</a><a class="block px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" href="#">English</a></div></div><div class="relative group"><button class="flex items-center gap-space-sm p-space-xs rounded-full hover:bg-surface-container transition-colors focus:outline-none" type="button"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="hidden lg:inline-block font-label-md text-label-md text-on-surface max-w-[120px] truncate">Nguyễn Hoàng Nam</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant hidden lg:inline-block">expand_more</span></button><div class="absolute right-0 top-full mt-space-xs hidden group-hover:block w-64 bg-surface-container-lowest rounded-DEFAULT shadow-[0_20px_32px_-8px_rgba(23,32,51,0.12)] p-space-sm z-50"><div class="px-space-md py-space-sm bg-surface-container-low rounded-DEFAULT mb-space-xs"><p class="font-label-md text-label-md text-on-surface truncate">Nguyễn Hoàng Nam</p><p class="font-label-sm text-label-sm text-on-surface-variant">Thành viên VIP Bạc</p></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary-container font-semibold rounded-DEFAULT"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="don-dat-cua-toi" href="#"><span class="material-symbols-outlined text-[18px]">confirmation_number</span><span>Đơn đặt của tôi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="tour-rieng-cua-toi" href="#"><span class="material-symbols-outlined text-[18px]">travel_explore</span><span>Tour riêng của tôi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="ho-so-ca-nhan" href="#"><span class="material-symbols-outlined text-[18px]">manage_accounts</span><span>Hồ sơ cá nhân</span></a><div class="h-px bg-surface-variant my-space-xs"></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md transition-colors" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Đăng xuất</span></a></nav></div></div></div></div></header><main class="w-full pt-20 bg-surface flex-1" id="app-content"><div class="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-8">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-on-surface-variant font-label-md text-label-md overflow-x-auto whitespace-nowrap py-1">
+<a class="hover:text-secondary-container transition-colors flex items-center gap-1" data-path="trang-chu" href="#">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span>Trang chủ</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<a class="hover:text-secondary-container transition-colors" data-path="don-dat-cua-toi" href="#">Đơn đặt của tôi</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<a class="hover:text-secondary-container transition-colors" href="#">Chi tiết đơn #DPV-2026-00001</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">Yêu cầu hủy tour</span>
+</nav>
+<!-- Page Header -->
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-surface-container-lowest p-6 rounded-DEFAULT shadow-[0_2px_8px_-2px_rgba(23,32,51,0.04)]">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>Hủy dịch vụ &amp; Hoàn tiền tự động</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Yêu cầu hủy tour &amp; hoàn tiền cho đơn #DPV-2026-00001</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Hệ thống xử lý minh bạch theo biểu phí dịch vụ du lịch hàng không và lữ hành VITA.</p>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-secondary-container font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="tel:19006868">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Tư vấn viên: 1900 6868</span>
+</a>
+</div>
+</div>
+<!-- Main Grid Layout (Left: Details & Form, Right: Estimation & Action) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Booking Info, Policy Table, Reason Form (7 Cols) -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Card: Tour Booking Summary -->
+<section class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-[0_2px_8px_-2px_rgba(23,32,51,0.04)]">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">confirmation_number</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Tóm tắt booking &amp; Đợt khởi hành</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Đã xác nhận &amp; Thanh toán 100%</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-5 items-start">
+<img class="w-full sm:w-40 h-28 object-cover rounded-DEFAULT" data-alt="Du thuyền 5 sao lộng lẫy trên mặt biển ngọc bích êm đềm tại Vịnh Hạ Long, ánh nắng ban mai rực rỡ, góc chụp flycam bao trọn cảnh quan núi đá vôi xanh biếc tự nhiên" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8sLQpmuYAspxtaXUiHb6014VKBHvGZoWNsXkoaWimLT4BgndT4b9nvpOgb3Cjil2A3xEsoLZVtoDrUIlxX2UroTllAtBQ3vLXTPNSeKKR7r03_BPS0gz8bvhwEtLsX1BN4D1Ws0Qjaj9DH6tsUDlFiC2VCtpxuqLPk9_Fe-2zD9yoI5sXWgQKML6tJK9rU0b_fTwBcTSK-mkYBh4w6A_lSfdgPTU_zBbgFbi9aHkVDBuTh81MwPdAA"/>
+<div class="flex-1 space-y-2">
+<h3 class="font-headline-sm text-[17px] text-on-surface leading-tight">Di Sản Vịnh Hạ Long - Du Thuyền 5 Sao Lan Hạ (3N2Đ)</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span>
+<span>Khởi hành: <strong class="text-on-surface">15/11/2025</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">event_busy</span>
+<span>Kết thúc: <strong class="text-on-surface">17/11/2025</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">group</span>
+<span>Số lượng khách: <strong class="text-on-surface">03 người lớn</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">place</span>
+<span>Xuất phát: <strong class="text-on-surface">Hà Nội (Xe Limousine)</strong></span>
+</div>
+</div>
+<!-- Countdown Pill Banner -->
+<div class="mt-2 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+<span>Đợt khởi hành: Còn <strong>18 ngày</strong> đến ngày đi</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Card: Transparent Cancellation Policy Table -->
+<section class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-[0_2px_8px_-2px_rgba(23,32,51,0.04)] space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">policy</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Chính sách hủy tour minh bạch</h2>
+</div>
+<span class="text-outline font-label-sm text-label-sm">Tiêu chuẩn GPLHQT #79-888</span>
+</div>
+<!-- Highlight Warning Box for current date slot -->
+<div class="flex items-center gap-3 p-4 rounded-DEFAULT bg-primary-fixed text-on-primary-fixed shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold">Thời điểm hiện tại (28/10/2025): Bạn đang trong khung Miễn phí hủy 100%</p>
+<p class="font-body-sm text-body-sm text-on-primary-fixed-variant">Quý khách gửi yêu cầu trước ngày 08/11/2025 để được hoàn trả trọn vẹn toàn bộ 100% giá trị hợp đồng mà không phải chịu bất kỳ khoản phạt nào.</p>
+</div>
+</div>
+<!-- Policy Table Grid -->
+<div class="overflow-hidden rounded-DEFAULT bg-surface-container-low">
+<div class="grid grid-cols-12 px-4 py-3 bg-surface-container text-on-surface font-label-md text-label-md">
+<div class="col-span-5 font-semibold">Khung thời gian hủy</div>
+<div class="col-span-3 text-center font-semibold">Phí hủy</div>
+<div class="col-span-4 text-right font-semibold">Tỷ lệ hoàn tiền</div>
+</div>
+<!-- Row 1: Active tier -->
+<div class="grid grid-cols-12 px-4 py-3.5 items-center bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-[inset_4px_0_0_0_#00c7e6]">
+<div class="col-span-5 flex flex-col">
+<span class="font-semibold text-secondary-container flex items-center gap-1">
+                Trước ngày đi ≥ 7 ngày
+                <span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Trước 23:59 ngày 08/11/2025</span>
+</div>
+<div class="col-span-3 text-center">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">0% (Miễn phí)</span>
+</div>
+<div class="col-span-4 text-right font-bold text-primary">Hoàn 100% tiền gốc</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 px-4 py-3 items-center bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<div class="col-span-5 flex flex-col">
+<span>Trước ngày đi 4 - 6 ngày</span>
+<span class="font-label-sm text-label-sm">Từ 09/11 đến 11/11/2025</span>
+</div>
+<div class="col-span-3 text-center font-semibold text-on-surface">30% giá tour</div>
+<div class="col-span-4 text-right">Hoàn lại 70%</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 px-4 py-3 items-center bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm">
+<div class="col-span-5 flex flex-col">
+<span>Trước ngày đi 2 - 3 ngày</span>
+<span class="font-label-sm text-label-sm">Từ 12/11 đến 13/11/2025</span>
+</div>
+<div class="col-span-3 text-center font-semibold text-tertiary">50% giá tour</div>
+<div class="col-span-4 text-right">Hoàn lại 50%</div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-12 px-4 py-3 items-center bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<div class="col-span-5 flex flex-col">
+<span>Trong vòng 24h hoặc vắng mặt</span>
+<span class="font-label-sm text-label-sm">Sau ngày 14/11/2025</span>
+</div>
+<div class="col-span-3 text-center font-bold text-error">100% giá tour</div>
+<div class="col-span-4 text-right text-error font-semibold">Không hoàn tiền</div>
+</div>
+</div>
+</section>
+<!-- Form: Cancellation Reasons & Refund Options -->
+<section class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-[0_2px_8px_-2px_rgba(23,32,51,0.04)] space-y-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">assignment</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Thông tin yêu cầu hủy tour</h2>
+</div>
+<form class="space-y-6" id="cancelTourForm" onsubmit="event.preventDefault();">
+<!-- Radio List: Reason Categories -->
+<div class="space-y-3">
+<label class="font-label-lg text-label-lg text-on-surface block">
+              1. Chọn lý do chính khiến bạn muốn hủy chuyến đi <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-1 gap-2.5">
+<label class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 text-secondary-container focus:ring-0" name="cancel_reason" type="radio" value="personal_schedule"/>
+<span class="font-body-md text-body-md text-on-surface">Thay đổi kế hoạch cá nhân / Công việc đột xuất</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="w-4 h-4 text-secondary-container focus:ring-0" name="cancel_reason" type="radio" value="health"/>
+<span class="font-body-md text-body-md text-on-surface">Lý do sức khỏe / Y tế cấp bách</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="w-4 h-4 text-secondary-container focus:ring-0" name="cancel_reason" type="radio" value="schedule_conflict"/>
+<span class="font-body-md text-body-md text-on-surface">Trùng với lịch trình sự kiện khác không thể dời</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="w-4 h-4 text-secondary-container focus:ring-0" name="cancel_reason" type="radio" value="support_dissatisfaction"/>
+<span class="font-body-md text-body-md text-on-surface">Không hài lòng với dịch vụ hỗ trợ / tư vấn viên</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="w-4 h-4 text-secondary-container focus:ring-0" name="cancel_reason" type="radio" value="other"/>
+<span class="font-body-md text-body-md text-on-surface">Khác (Vui lòng ghi rõ bên dưới)</span>
+</label>
+</div>
+</div>
+<!-- Textarea: Reason Details -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface block" for="cancelNotes">
+              2. Ghi rõ chi tiết lý do của bạn <span class="text-error">*</span>
+</label>
+<textarea class="w-full px-4 py-3 rounded-DEFAULT bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="cancelNotes" placeholder="Vui lòng cung cấp thêm thông tin để bộ phận chăm sóc khách hàng DPV hỗ trợ hồ sơ nhanh nhất..." required="" rows="3"></textarea>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tối thiểu 20 ký tự. Ý kiến chân thành của bạn giúp chúng tôi nâng cấp chất lượng tour.</p>
+</div>
+<!-- File Upload: Proof Documents -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface block">
+              3. Đính kèm tài liệu / Minh chứng (Nếu có)
+            </label>
+<div class="relative flex flex-col items-center justify-center p-6 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer text-center group">
+<input class="absolute inset-0 opacity-0 cursor-pointer" id="proofUpload" multiple="" onchange="handleFileUpload(this)" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest text-secondary-container flex items-center justify-center mb-2 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Kéo thả tệp hoặc nhấn để chọn tài liệu</p>
+<p class="font-label-sm text-label-sm text-outline mt-1">Đính kèm vé máy bay hủy/hoãn, giấy chứng nhận y tế, công văn công tác (PDF, JPG, PNG - Tối đa 15MB)</p>
+<div class="hidden mt-3 px-3 py-1 bg-surface-container-lowest rounded-full text-secondary font-label-sm text-label-sm" id="fileUploadStatus"></div>
+</div>
+</div>
+<!-- Refund Method Choice -->
+<div class="space-y-3">
+<label class="font-label-lg text-label-lg text-on-surface block">
+              4. Chọn phương thức nhận tiền hoàn lại <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Method 1: VNPAY Gate -->
+<label class="relative flex flex-col p-4 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 text-secondary-container" name="refund_destination" onchange="updateRefundOption(this.value)" type="radio" value="vnpay"/>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Cổng thanh toán gốc (VNPAY-QR)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">account_balance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pl-6">
+                  Hoàn trực tiếp về tài khoản ngân hàng đã quét thanh toán. Thời gian tiền vào tài khoản: 3 - 5 ngày làm việc.
+                </p>
+<div class="mt-3 pl-6">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-1 rounded-full">Miễn phí giao dịch</span>
+</div>
+</label>
+<!-- Method 2: DPV Travel Credit (+5%) -->
+<label class="relative flex flex-col p-4 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 text-secondary-container" name="refund_destination" onchange="updateRefundOption(this.value)" type="radio" value="credit"/>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">DPV Travel Credit</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">loyalty</span>
+</div>
+<div class="mt-2 pl-6 space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">add_circle</span>
+                    Nhận thêm +5% giá trị credit (529.000 đ)
+                  </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Tiền vào ví credit tài khoản ngay tức thì. Sử dụng để đặt bất kỳ tour du lịch nào trong vòng 12 tháng.
+                  </p>
+</div>
+</label>
+</div>
+</div>
+</form>
+</section>
+</div>
+<!-- RIGHT COLUMN: Sticky Refund Calculation, Disclaimer & Final CTAs (5 Cols) -->
+<div class="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
+<!-- Card: Estimation Calculation Details -->
+<section class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-[0_12px_24px_-6px_rgba(0,102,255,0.08)] space-y-6">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dự toán hoàn tiền</h2>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary-container font-label-sm text-label-sm font-semibold">
+            Tự động tính toán
+          </span>
+</div>
+<div class="space-y-3 font-body-md text-body-md text-on-surface">
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Tổng số tiền đã thanh toán:</span>
+<span class="font-semibold text-on-surface">10.580.000 đ</span>
+</div>
+<div class="flex justify-between items-center py-1 text-on-surface-variant">
+<span class="flex items-center gap-1">
+              Phí hủy áp dụng (0%):
+              <span class="material-symbols-outlined text-[16px] text-primary" title="Hủy trước 7 ngày không mất phí">help_outline</span>
+</span>
+<span class="text-primary font-semibold">0 đ</span>
+</div>
+<div class="flex justify-between items-center py-1 text-on-surface-variant">
+<span>Phí xử lý giao dịch hệ thống:</span>
+<span class="font-semibold text-primary">0 đ (Miễn phí)</span>
+</div>
+<!-- Conditional Row: Additional Credit Bonus (Hidden by default unless credit selected) -->
+<div class="hidden flex justify-between items-center py-2 px-3 rounded-DEFAULT bg-tertiary-fixed/40 text-on-tertiary-container" id="creditBonusRow">
+<span class="font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">redeem</span>
+              Ưu đãi DPV Travel Credit (+5%):
+            </span>
+<span class="font-bold text-headline-sm text-[16px]">+529.000 đ</span>
+</div>
+<div class="h-px bg-surface-variant my-2"></div>
+<!-- Total Refund Grand Figure -->
+<div class="p-4 rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng số tiền hoàn lại dự kiến:</span>
+<div class="flex items-baseline justify-between">
+<span class="font-display-lg text-[32px] sm:text-[36px] font-bold text-secondary-container tracking-tight" id="refundAmountDisplay">
+                10.580.000 đ
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold" id="refundPercentBadge">
+                100%
+              </span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span id="refundDurationNote">Thời gian giải ngân dự kiến: <strong>3 - 5 ngày làm việc</strong></span>
+</div>
+</div>
+</div>
+<!-- Checkbox confirmation -->
+<div class="p-4 rounded-DEFAULT bg-surface-container-high/60 space-y-2">
+<label class="flex items-start gap-3 cursor-pointer select-none">
+<input class="mt-1 w-5 h-5 rounded text-secondary-container focus:ring-0 cursor-pointer" id="agreePolicyCheckbox" onchange="toggleCancelSubmit(this.checked)" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Tôi đã đọc, hiểu rõ các quy định tại <strong>Chính sách hoàn hủy tour</strong> của DPV TourDuLich và xác nhận yêu cầu hủy chỗ cho toàn bộ <strong>03 hành khách</strong> trong đơn booking này.
+            </span>
+</label>
+</div>
+<!-- Action CTAs -->
+<div class="space-y-3 pt-2">
+<button class="w-full py-3.5 px-6 rounded-full bg-error text-on-error font-label-lg text-label-lg shadow-md hover:bg-error-container hover:text-on-error-container transition-all flex items-center justify-center gap-2 opacity-50 cursor-not-allowed" disabled="" id="btnSubmitCancel" onclick="confirmCancelAction()" type="button">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span>Xác nhận gửi yêu cầu hủy tour</span>
+</button>
+<a class="w-full py-3.5 px-6 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2 text-center" data-path="don-dat-cua-toi" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Quay lại giữ nguyên booking</span>
+</a>
+</div>
+<!-- Support Info Guarantee Box -->
+<div class="p-4 rounded-DEFAULT bg-surface-container-low flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">lock_clock</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Yêu cầu hủy được ghi nhận tức thì theo mốc thời gian máy chủ hệ thống. Mọi thắc mắc liên hệ Hotline <strong>1900 6868</strong> (24/7).
+          </div>
+</div>
+</section>
+</div>
+</div>
+<!-- Modal: Confirmation Dialogue (Hidden by Default) -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="cancelConfirmModal">
+<div class="bg-surface-container-lowest rounded-DEFAULT max-w-md w-full p-6 shadow-2xl space-y-5 animate-in fade-in zoom-in duration-200">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">error</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Xác nhận gửi yêu cầu hủy tour?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Sau khi gửi, booking <strong class="text-on-surface">#DPV-2026-00001</strong> sẽ được hủy ngay lập tức trên hệ thống và số tiền hoàn dự kiến <strong class="text-secondary-container">10.580.000 đ</strong> sẽ chuyển vào quy trình giải ngân. Hành động này không thể hoàn tác.
+        </p>
+</div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeCancelModal()" type="button">
+          Xem lại
+        </button>
+<button class="px-6 py-2.5 rounded-full bg-error text-on-error font-label-md text-label-md hover:opacity-90 transition-opacity shadow-sm flex items-center gap-1.5" onclick="processFinalCancel()" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Tôi chắc chắn hủy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Success Notification Box (Simulated toast state) -->
+<div class="hidden fixed bottom-6 right-6 z-50 bg-primary text-on-primary p-4 rounded-DEFAULT shadow-xl max-w-sm flex items-center gap-3" id="cancelSuccessAlert">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<div class="text-body-sm font-body-sm">
+<p class="font-semibold font-label-md text-label-md">Đã gửi yêu cầu hủy tour thành công!</p>
+<p class="opacity-90">Mã yêu cầu hoàn tiền #RF-2026-0089. Đang chuyển hướng...</p>
+</div>
+</div>
+</div>
+<script>
+  function updateRefundOption(val) {
+    const bonusRow = document.getElementById('creditBonusRow');
+    const displayAmount = document.getElementById('refundAmountDisplay');
+    const percentBadge = document.getElementById('refundPercentBadge');
+    const durationNote = document.getElementById('refundDurationNote');
+
+    if (val === 'credit') {
+      bonusRow.classList.remove('hidden');
+      displayAmount.innerText = '11.109.000 đ';
+      percentBadge.innerText = '105% (Credit)';
+      durationNote.innerHTML = 'Thời gian nhận tiền: <strong>Có ngay lập tức</strong>';
+    } else {
+      bonusRow.classList.add('hidden');
+      displayAmount.innerText = '10.580.000 đ';
+      percentBadge.innerText = '100%';
+      durationNote.innerHTML = 'Thời gian giải ngân dự kiến: <strong>3 - 5 ngày làm việc</strong>';
+    }
+  }
+
+  function handleFileUpload(input) {
+    const statusBox = document.getElementById('fileUploadStatus');
+    if (input.files && input.files.length > 0) {
+      statusBox.innerText = 'Đã chọn ' + input.files.length + ' tệp đính kèm: ' + input.files[0].name;
+      statusBox.classList.remove('hidden');
+    }
+  }
+
+  function toggleCancelSubmit(isChecked) {
+    const btn = document.getElementById('btnSubmitCancel');
+    if (isChecked) {
+      btn.disabled = false;
+      btn.classList.remove('opacity-50', 'cursor-not-allowed');
+    } else {
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+    }
+  }
+
+  function confirmCancelAction() {
+    const notes = document.getElementById('cancelNotes').value.trim();
+    if (notes.length < 10) {
+      alert('Vui lòng cung cấp thêm chi tiết lý do bạn muốn hủy tour (tối thiểu 10 ký tự).');
+      document.getElementById('cancelNotes').focus();
+      return;
+    }
+    document.getElementById('cancelConfirmModal').classList.remove('hidden');
+  }
+
+  function closeCancelModal() {
+    document.getElementById('cancelConfirmModal').classList.add('hidden');
+  }
+
+  function processFinalCancel() {
+    closeCancelModal();
+    const alertBox = document.getElementById('cancelSuccessAlert');
+    alertBox.classList.remove('hidden');
+    setTimeout(() => {
+      window.location.hash = '#don-dat-cua-toi';
+    }, 2000);
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant mt-space-xl"><div class="w-full px-margin py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-secondary-container">DPV TourDuLich</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Cung cấp các hành trình trải nghiệm nghỉ dưỡng cao cấp và tour thiết kế riêng thông minh, tối ưu công nghệ cho du khách Việt.</p><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span>Trụ sở chính: Tầng 8, Tòa nhà DPV Tower, Q.1, TP. Hồ Chí Minh</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">phone</span>Hotline hỗ trợ: 1900 6868 (24/7)</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">mail</span>contact@dpvtourdulich.vn</p></div></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-surface">Hệ Thống Chi Nhánh</h4><div class="flex flex-col gap-space-sm font-body-sm text-body-sm"><div><span class="font-semibold text-on-surface block">Hà Nội:</span><span>98 Phố Huế, P. Hàng Bài, Q. Hoàn Kiếm</span></div><div><span class="font-semibold text-on-surface block">Đà Nẵng:</span><span>45 Nguyễn Văn Linh, P. Nam Dương, Q. Hải Châu</span></div><div><span class="font-semibold text-on-surface block">Cần Thơ:</span><span>120 Đường 30/4, P. An Phú, Q. Ninh Kiều</span></div></div></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-surface">Khám Phá &amp; Hỗ Trợ</h4><nav class="flex flex-col gap-space-xs font-label-md text-label-md" data-active-classes="text-secondary-container font-semibold"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="tour-trong-nuoc" href="#">Tour trong nước nổi bật</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="tour-quoc-te" href="#">Tour quốc tế cao cấp</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="yeu-cau-tour-rieng" href="#">Thiết kế tour riêng</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="cam-nang-du-lich" href="#">Cẩm nang du lịch &amp; Sự kiện</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="dieu-khoan-dich-vu" href="#">Điều khoản &amp; Chính sách bảo mật</a></nav></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-surface">Chứng Nhận &amp; Thanh Toán</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Được cấp phép bởi Tổng cục Du lịch Việt Nam &amp; Hiệp hội Lữ hành Quốc tế VITA.</p><div class="flex items-center gap-space-sm flex-wrap"><span class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Giấy phép GPLHQT #79-888</span><span class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Đã Thông Báo BCT</span></div><div class="mt-space-xs"><p class="font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Đối tác thanh toán bảo mật:</p><div class="flex items-center gap-space-xs flex-wrap"><span class="px-space-sm py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)]">VNPAY</span><span class="px-space-sm py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)]">Momo</span><span class="px-space-sm py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)]">Visa/Mastercard</span><span class="px-space-sm py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)]">Napas 247</span></div></div></div></div><div class="w-full px-margin py-space-md bg-surface-container text-center font-body-sm text-body-sm text-on-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p>© 2025 DPV TourDuLich JSC. Toàn bộ quyền được bảo lưu.</p><p class="text-on-surface-variant">Phát triển bởi đội ngũ kỹ thuật DPV Travel Tech</p></div></footer></body></html>
