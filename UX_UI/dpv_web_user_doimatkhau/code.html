@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#f9f9ff",
+          "on-primary-container": "#004f5c",
+          "outline-variant": "#bbc9cd",
+          "on-primary-fixed-variant": "#004e5c",
+          "on-surface-variant": "#3c494d",
+          "tertiary-container": "#ff9e60",
+          "surface-dim": "#d1daf4",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#b3c5ff",
+          "surface-container-low": "#f1f3ff",
+          "on-tertiary-fixed-variant": "#753400",
+          "primary-fixed": "#a9edff",
+          "primary-fixed-dim": "#35d8f8",
+          "on-secondary": "#ffffff",
+          "secondary-fixed": "#dae1ff",
+          "on-error-container": "#93000a",
+          "on-tertiary-fixed": "#321200",
+          "error": "#ba1a1a",
+          "surface-bright": "#f9f9ff",
+          "surface-variant": "#d9e2fc",
+          "inverse-surface": "#273044",
+          "background": "#f9f9ff",
+          "on-secondary-fixed-variant": "#003fa4",
+          "outline": "#6c797d",
+          "error-container": "#ffdad6",
+          "surface-container-high": "#e1e8ff",
+          "on-primary": "#ffffff",
+          "primary": "#006879",
+          "surface-tint": "#006879",
+          "tertiary": "#994700",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#001849",
+          "secondary-container": "#0266ff",
+          "on-tertiary-container": "#753500",
+          "surface-container-highest": "#d9e2fc",
+          "on-background": "#121b2e",
+          "primary-container": "#00c7e6",
+          "on-surface": "#121b2e",
+          "secondary": "#0050cc",
+          "tertiary-fixed-dim": "#ffb68b",
+          "on-primary-fixed": "#001f26",
+          "on-tertiary": "#ffffff",
+          "inverse-on-surface": "#edf0ff",
+          "surface-container": "#e9edff",
+          "on-secondary-container": "#f9f7ff",
+          "tertiary-fixed": "#ffdbc8",
+          "inverse-primary": "#35d8f8"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "margin": "2rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": [
+            "Be Vietnam Pro"
+          ],
+          "display-lg": [
+            "Outfit"
+          ],
+          "label-md": [
+            "Be Vietnam Pro"
+          ],
+          "body-md": [
+            "Be Vietnam Pro"
+          ],
+          "headline-lg-mobile": [
+            "Outfit"
+          ],
+          "headline-lg": [
+            "Outfit"
+          ],
+          "body-sm": [
+            "Be Vietnam Pro"
+          ],
+          "label-sm": [
+            "Be Vietnam Pro"
+          ],
+          "headline-sm": [
+            "Outfit"
+          ],
+          "body-lg": [
+            "Be Vietnam Pro"
+          ],
+          "display-lg-mobile": [
+            "Outfit"
+          ],
+          "headline-md": [
+            "Outfit"
+          ]
+        },
+        "fontSize": {
+          "label-lg": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="trang-chu" href="#"><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00c7e6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><span class="font-headline-sm text-headline-sm text-secondary tracking-tight">DPV <span class="text-primary">TourDuLich</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-label-md"><a class="px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="trang-chu" href="#">Trang chủ</a><a class="px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="tour-trong-nuoc" href="#">Tour trong nước</a><a class="px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="tour-quoc-te" href="#">Tour quốc tế</a><a class="px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="yeu-cau-tour-rieng" href="#">Yêu cầu tour riêng</a><a class="px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="cam-nang-du-lich" href="#">Cẩm nang du lịch</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[20px] text-tertiary">support_agent</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Hotline 24/7</span><a class="font-label-md text-label-md text-tertiary font-bold hover:underline" href="tel:19006868">1900 6868</a></div></div><div class="w-px h-6 bg-surface-container-high hidden md:block"></div><button class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><div class="flex items-center bg-surface-container-low rounded-full p-space-xs text-on-surface-variant"><button class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.05)]" type="button">VN</button><button class="px-space-sm py-0.5 rounded-full text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">EN</button></div><div class="w-px h-6 bg-surface-container-high hidden sm:block"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Nguyễn Hoàng Nam</span><span class="font-label-sm text-label-sm text-outline">Thành viên VIP Diamond</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Breadcrumb Navigation Bar -->
+<div class="w-full bg-surface-container-low py-space-sm px-gutter">
+<div class="max-w-7xl mx-auto flex items-center gap-space-xs text-body-sm font-body-sm text-outline">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span> Trang chủ
+      </a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Tài khoản</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-semibold text-on-surface">Đổi mật khẩu &amp; Bảo mật</span>
+</div>
+</div>
+<!-- Main Content Layout Section -->
+<div class="max-w-7xl mx-auto px-gutter py-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: User Sidebar & Mini Profile -->
+<aside class="lg:col-span-4 xl:col-span-3 space-y-space-md">
+<!-- User Profile Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm space-y-space-md relative overflow-hidden">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-surface-container-high/40 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-surface-variant flex items-center justify-center text-primary font-headline-md font-bold overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of an Asian businessman traveler smiling with confident friendly expression, wearing a navy smart casual jacket, soft ambient studio lighting with modern cyan travel aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5dpEzsAydcAgBTPL-kj2DsXv_m1_lUpzejq9HG9WX5wDXPLL0fxPpYziPCPoec2yon-f8v87bGEUOr6DEgZBtqxwTDNbgi7iN_FKT_R39BI3dBsJlrLZdedCoK2u_DSCgN1kT581LZ7licezTSKI1dv7QfPgeLT63S_piWYHgAyNBskwIquZvFDMBEfNgJh18DjxbJaut3bfOPtTCFKNfykboxh74Gz40d8knF_7VFWHzgQxWisQ61Q"/>
+</div>
+<span class="absolute bottom-0 right-0 w-4 h-4 bg-[#16a34a] rounded-full ring-2 ring-surface-container-lowest" title="Đang trực tuyến"></span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Nguyễn Hoàng Nam</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline truncate">nam.nguyen@dpvtravel.com</p>
+</div>
+</div>
+<!-- Membership & Loyalty Miles Bento Box -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Hội viên</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">Gold Explorer</span>
+</div>
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">flight_takeoff</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Dặm DPV</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold mt-1">1.450 dặm</span>
+</div>
+</div>
+<!-- Sub Navigation Menu -->
+<nav class="space-y-1 pt-space-xs">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">account_circle</span>
+<span>Hồ sơ cá nhân</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-bold shadow-sm transition-all" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary" style="font-variation-settings: 'FILL' 1;">lock_reset</span>
+<span>Đổi mật khẩu</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span>Sổ hành khách lưu sẵn</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">loyalty</span>
+<span>Lịch sử tích lũy dặm</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-label-md text-label-md text-error hover:bg-error-container/30 transition-all pt-space-xs" href="#">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Đăng xuất</span>
+</a>
+</nav>
+</div>
+<!-- Security Assessment Badge -->
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-sm shadow-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-[#16a34a]/15 flex items-center justify-center text-[#16a34a]">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tình trạng tài khoản</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-[#16a34a]/10 text-[#16a34a] font-label-sm text-label-sm font-bold">TỐT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Lần đổi mật khẩu gần nhất là <strong class="text-on-surface">68 ngày trước</strong>. Khuyến nghị cập nhật định kỳ mỗi 90 ngày để bảo vệ điểm thưởng DPV Miles.
+          </p>
+<!-- Timeline mini progress -->
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full" style="width: 75%"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>Đã dùng 68 ngày</span>
+<span>Chu kỳ: 90 ngày</span>
+</div>
+</div>
+</aside>
+<!-- Right Main Column: Password Settings & Audit Logs -->
+<main class="lg:col-span-8 xl:col-span-9 space-y-space-lg">
+<!-- CARD 1: Đổi mật khẩu tài khoản -->
+<section class="bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl shadow-sm space-y-space-lg relative">
+<!-- Card Header Banner -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm bg-gradient-to-r from-surface-container-low/80 to-transparent p-space-md rounded-DEFAULT">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[26px]">key</span>
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Đổi mật khẩu tài khoản</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                Mật khẩu của bạn cần tối thiểu 8 ký tự, bao gồm chữ hoa, chữ thường, chữ số và ký tự đặc biệt nhằm bảo vệ tối đa dữ liệu đặt chỗ và điểm dặm thưởng DPV Miles.
+              </p>
+</div>
+<div class="shrink-0">
+<div class="px-space-md py-space-xs rounded-full bg-surface-container text-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+                Mã hóa AES-256
+              </div>
+</div>
+</div>
+<!-- Form Area -->
+<form class="space-y-space-lg" id="pwdChangeForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- Input: Current Password -->
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="current_password">
+                  Mật khẩu hiện tại <span class="text-error">*</span>
+</label>
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-semibold flex items-center gap-0.5" href="#">
+<span class="material-symbols-outlined text-[14px]">help</span> Quên mật khẩu?
+                </a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">lock_clock</span>
+<input class="w-full pl-12 pr-12 py-3 bg-surface-container-low rounded-full text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container font-body-md text-body-md transition-all shadow-inner" id="current_password" name="current_password" placeholder="Nhập mật khẩu hiện tại của bạn" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-md text-outline hover:text-on-surface transition-colors p-1" onclick="toggleVisibility('current_password', 'toggle_curr_icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="toggle_curr_icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Input: New Password -->
+<div class="space-y-space-xs max-w-2xl">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="new_password">
+                Mật khẩu mới <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">password</span>
+<input class="w-full pl-12 pr-12 py-3 bg-surface-container-low rounded-full text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container font-body-md text-body-md transition-all shadow-inner" id="new_password" name="new_password" oninput="evaluatePasswordStrength(this.value)" placeholder="Nhập mật khẩu mới an toàn" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-md text-outline hover:text-on-surface transition-colors p-1" onclick="toggleVisibility('new_password', 'toggle_new_icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="toggle_new_icon">visibility</span>
+</button>
+</div>
+<!-- Password Strength Meter Visuals -->
+<div class="pt-space-xs space-y-space-xs bg-surface-container-low/50 p-space-md rounded-DEFAULT mt-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Độ mạnh mật khẩu:</span>
+<span class="font-bold text-[#16a34a]" id="strengthText">Rất mạnh (4/4 yêu cầu)</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 h-1.5 w-full">
+<div class="rounded-full bg-[#16a34a] transition-all" id="bar1"></div>
+<div class="rounded-full bg-[#16a34a] transition-all" id="bar2"></div>
+<div class="rounded-full bg-[#16a34a] transition-all" id="bar3"></div>
+<div class="rounded-full bg-[#16a34a] transition-all" id="bar4"></div>
+</div>
+<!-- Validation Checklist Bento Pills -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-space-xs">
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-[#16a34a]" id="rule-length">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Tối thiểu 8 ký tự</span>
+</div>
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-[#16a34a]" id="rule-case">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Có chữ hoa và chữ thường</span>
+</div>
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-[#16a34a]" id="rule-number">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Có ít nhất 1 chữ số (0-9)</span>
+</div>
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-[#16a34a]" id="rule-special">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Có ít nhất 1 ký tự đặc biệt (!@#$...)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Input: Confirm New Password -->
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="confirm_password">
+                  Xác nhận mật khẩu mới <span class="text-error">*</span>
+</label>
+<span class="hidden items-center gap-1 font-label-sm text-label-sm text-[#16a34a] font-bold" id="matchStatusBadge">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Khớp mật khẩu
+                </span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">task_alt</span>
+<input class="w-full pl-12 pr-12 py-3 bg-surface-container-low rounded-full text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container font-body-md text-body-md transition-all shadow-inner" id="confirm_password" name="confirm_password" oninput="checkPasswordMatch()" placeholder="Nhập lại mật khẩu mới vừa đặt" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-md text-outline hover:text-on-surface transition-colors p-1" onclick="toggleVisibility('confirm_password', 'toggle_confirm_icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="toggle_confirm_icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Global Logout Checkbox -->
+<div class="p-space-md bg-surface-container-low rounded-DEFAULT flex items-start gap-space-sm max-w-2xl cursor-pointer" onclick="document.getElementById('logout_devices_check').click()">
+<input checked="" class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary cursor-pointer" id="logout_devices_check" name="logout_all_devices" onclick="event.stopPropagation()" type="checkbox"/>
+<div class="flex-1 select-none">
+<label class="font-label-md text-label-md text-on-surface font-semibold cursor-pointer" for="logout_devices_check">
+                  Đăng xuất khỏi tất cả các thiết bị khác sau khi đổi mật khẩu thành công
+                </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Bảo vệ an toàn tức thì nếu bạn từng sử dụng thiết bị công cộng tại sân bay hoặc khách sạn. Phiên hiện tại trên máy tính này vẫn sẽ được duy trì.
+                </p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="px-8 py-3 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg font-semibold hover:bg-primary-container hover:text-on-primary-container shadow-md hover:shadow-lg transition-all flex items-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+                Lưu thay đổi mật khẩu
+              </button>
+<button class="px-8 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg font-medium hover:bg-surface-container hover:text-on-surface transition-all" type="reset">
+                Hủy bỏ
+              </button>
+</div>
+<!-- TLS / AES Notice Assurance Box -->
+<div class="flex items-center gap-space-md p-space-md rounded-DEFAULT bg-[#0266ff]/5 text-secondary max-w-2xl">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[22px]">security</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Đảm bảo an toàn kỹ thuật số:</strong> Tất cả giao dịch xác thực mật khẩu được truyền trực tiếp qua giao thức bảo mật <span class="text-secondary font-semibold">TLS 1.3</span> và lưu trữ bằng thuật toán một chiều chuẩn mã hóa quốc tế <span class="text-secondary font-semibold">AES-256</span>.
+              </div>
+</div>
+</form>
+</section>
+<!-- CARD 2: Nhật ký bảo mật & Hoạt động đăng nhập gần đây -->
+<section class="bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl shadow-sm space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">history_edu</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Nhật ký bảo mật &amp; Phiên đăng nhập</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Kiểm tra các thiết bị được cấp quyền truy cập tài khoản DPV TourDuLich của bạn.
+              </p>
+</div>
+<!-- 2FA Authentication Toggle Pill -->
+<div class="bg-surface-container-low p-space-xs rounded-full flex items-center gap-space-sm pl-space-md shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">phonelink_lock</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Bảo mật 2FA (SMS / App)</span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-[#16a34a] text-white font-label-sm text-label-sm font-bold flex items-center gap-1 transition-all shadow-sm" id="btn2FA" onclick="toggle2FAState()" type="button">
+<span class="material-symbols-outlined text-[14px]">toggle_on</span>
+                Đang bật
+              </button>
+</div>
+</div>
+<!-- Active Devices List -->
+<div class="space-y-space-sm">
+<!-- Device 1: Current Session -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md transition-all hover:bg-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">laptop_mac</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">MacBook Pro 16"</span>
+<span class="px-2 py-0.5 rounded-full bg-[#16a34a]/15 text-[#16a34a] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16a34a] animate-pulse"></span> Thiết bị hiện tại
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">
+                    Trình duyệt Google Chrome 124.0 • TP. Hồ Chí Minh, Việt Nam (IP: 14.161.42.xxx)
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Trực tuyến ngay bây giờ</span>
+</div>
+</div>
+<!-- Device 2: Mobile App -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md transition-all hover:bg-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">smartphone</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Apple iPhone 15 Pro</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                      Ứng dụng DPV iOS
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">
+                    DPV Travel App v4.2.1 • Quận 1, TP. Hồ Chí Minh (4G Mobifone)
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center">
+<span class="font-label-sm text-label-sm text-outline">3 giờ trước</span>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest hover:bg-error/10 hover:text-error text-on-surface-variant font-label-sm text-label-sm font-semibold transition-colors shadow-sm" onclick="confirmRevoke(this, 'Apple iPhone 15 Pro')" type="button">
+                  Thu hồi quyền
+                </button>
+</div>
+</div>
+<!-- Device 3: Remote Desktop -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md transition-all hover:bg-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-outline shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">desktop_windows</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Windows PC Văn phòng</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                      Microsoft Edge
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">
+                    Windows 11 Enterprise • Hoàn Kiếm, Hà Nội (IP: 118.70.128.xxx)
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center">
+<span class="font-label-sm text-label-sm text-outline">2 ngày trước</span>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest hover:bg-error/10 hover:text-error text-on-surface-variant font-label-sm text-label-sm font-semibold transition-colors shadow-sm" onclick="confirmRevoke(this, 'Windows PC Văn phòng')" type="button">
+                  Thu hồi quyền
+                </button>
+</div>
+</div>
+</div>
+<!-- Security Tip Callout Footer -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Nếu phát hiện bất kỳ thiết bị hoặc vị trí truy cập nào lạ, hãy nhấn <strong class="text-on-surface">"Thu hồi quyền"</strong> ngay lập tức và tiến hành đổi mật khẩu. Đội ngũ An toàn thông tin DPV luôn sẵn sàng hỗ trợ tại Hotline <a class="text-secondary font-bold hover:underline" href="tel:19006868">1900 6868</a>.
+            </p>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+<script>
+  function toggleVisibility(inputId, iconId) {
+    const input = document.getElementById(inputId);
+    const icon = document.getElementById(iconId);
+    if (!input || !icon) return;
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function evaluatePasswordStrength(val) {
+    const hasLength = val.length >= 8;
+    const hasCase = /[A-Z]/.test(val) && /[a-z]/.test(val);
+    const hasNum = /[0-9]/.test(val);
+    const hasSpecial = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(val);
+
+    updateRuleBadge('rule-length', hasLength);
+    updateRuleBadge('rule-case', hasCase);
+    updateRuleBadge('rule-number', hasNum);
+    updateRuleBadge('rule-special', hasSpecial);
+
+    let score = 0;
+    if (hasLength) score++;
+    if (hasCase) score++;
+    if (hasNum) score++;
+    if (hasSpecial) score++;
+
+    const textEl = document.getElementById('strengthText');
+    const bars = [
+      document.getElementById('bar1'),
+      document.getElementById('bar2'),
+      document.getElementById('bar3'),
+      document.getElementById('bar4')
+    ];
+
+    bars.forEach(b => {
+      b.className = 'rounded-full transition-all';
+      b.style.backgroundColor = '#d9e2fc';
+    });
+
+    if (val.length === 0) {
+      textEl.textContent = 'Chưa nhập mật khẩu';
+      textEl.className = 'font-bold text-outline';
+      return;
+    }
+
+    if (score <= 1) {
+      textEl.textContent = 'Yếu (1/4 yêu cầu)';
+      textEl.className = 'font-bold text-error';
+      bars[0].style.backgroundColor = '#ba1a1a';
+    } else if (score === 2) {
+      textEl.textContent = 'Trung bình (2/4 yêu cầu)';
+      textEl.className = 'font-bold text-tertiary';
+      bars[0].style.backgroundColor = '#ff9e60';
+      bars[1].style.backgroundColor = '#ff9e60';
+    } else if (score === 3) {
+      textEl.textContent = 'Khá (3/4 yêu cầu)';
+      textEl.className = 'font-bold text-secondary';
+      bars[0].style.backgroundColor = '#006879';
+      bars[1].style.backgroundColor = '#006879';
+      bars[2].style.backgroundColor = '#006879';
+    } else {
+      textEl.textContent = 'Rất mạnh (4/4 yêu cầu)';
+      textEl.className = 'font-bold text-[#16a34a]';
+      bars.forEach(b => b.style.backgroundColor = '#16a34a');
+    }
+
+    checkPasswordMatch();
+  }
+
+  function updateRuleBadge(elementId, passed) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    const icon = el.querySelector('.material-symbols-outlined');
+    if (passed) {
+      el.className = 'flex items-center gap-1.5 text-body-sm font-body-sm text-[#16a34a]';
+      if (icon) {
+        icon.textContent = 'check_circle';
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    } else {
+      el.className = 'flex items-center gap-1.5 text-body-sm font-body-sm text-outline';
+      if (icon) {
+        icon.textContent = 'radio_button_unchecked';
+        icon.style.fontVariationSettings = "'FILL' 0";
+      }
+    }
+  }
+
+  function checkPasswordMatch() {
+    const newPwd = document.getElementById('new_password').value;
+    const confirmPwd = document.getElementById('confirm_password').value;
+    const badge = document.getElementById('matchStatusBadge');
+
+    if (!badge) return;
+
+    if (confirmPwd.length > 0 && newPwd === confirmPwd) {
+      badge.classList.remove('hidden');
+      badge.classList.add('flex');
+    } else {
+      badge.classList.add('hidden');
+      badge.classList.remove('flex');
+    }
+  }
+
+  function handleFormSubmit() {
+    const newPwd = document.getElementById('new_password').value;
+    const confirmPwd = document.getElementById('confirm_password').value;
+
+    if (newPwd !== confirmPwd) {
+      alert('Xác nhận mật khẩu mới chưa trùng khớp. Vui lòng kiểm tra lại!');
+      return;
+    }
+
+    alert('Cập nhật mật khẩu thành công! Tài khoản DPV TourDuLich của bạn đã được bảo vệ.');
+    document.getElementById('pwdChangeForm').reset();
+    evaluatePasswordStrength('');
+  }
+
+  function confirmRevoke(btn, deviceName) {
+    if (confirm(`Bạn có chắc chắn muốn thu hồi quyền truy cập của thiết bị ${deviceName}?`)) {
+      const container = btn.closest('.flex-col');
+      if (container) {
+        container.style.opacity = '0.4';
+        btn.textContent = 'Đã thu hồi';
+        btn.disabled = true;
+        btn.classList.add('cursor-not-allowed');
+      }
+    }
+  }
+
+  let is2FAActive = true;
+  function toggle2FAState() {
+    const btn = document.getElementById('btn2FA');
+    if (!btn) return;
+    is2FAActive = !is2FAActive;
+    if (is2FAActive) {
+      btn.className = 'px-space-md py-1.5 rounded-full bg-[#16a34a] text-white font-label-sm text-label-sm font-bold flex items-center gap-1 transition-all shadow-sm';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">toggle_on</span> Đang bật';
+    } else {
+      btn.className = 'px-space-md py-1.5 rounded-full bg-outline text-white font-label-sm text-label-sm font-bold flex items-center gap-1 transition-all shadow-sm';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">toggle_off</span> Đã tắt';
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t-0 shadow-[0_-2px_12px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00c7e6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><span class="font-headline-sm text-headline-sm text-secondary tracking-tight">DPV <span class="text-primary">TourDuLich</span></span></div><p class="font-body-md text-body-md text-on-surface-variant pr-space-md">Công ty Cổ phần Du lịch &amp; Công nghệ DPV Việt Nam. Nền tảng kiến tạo những kỳ nghỉ ven biển và tour trải nghiệm cao cấp hàng đầu Việt Nam.</p><div class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span><span>Trụ sở chính: Tầng 12, Tòa nhà DPV Tech, 68 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span><span>Tổng đài tư vấn: 1900 6868 - (028) 3822 6868</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">mail</span><span>Email hỗ trợ: hotro@dpvtourdulich.vn</span></div></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[18px]">Hệ thống chi nhánh</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><span class="font-semibold text-on-surface">Hà Nội:</span> 45 Lý Thường Kiệt, Hoàn Kiếm</li><li><span class="font-semibold text-on-surface">Đà Nẵng:</span> 120 Bạch Đằng, Hải Châu</li><li><span class="font-semibold text-on-surface">Nha Trang:</span> 18 Trần Phú, Lộc Thọ</li><li><span class="font-semibold text-on-surface">Cần Thơ:</span> 72 Hòa Bình, Ninh Kiều</li><li><span class="font-semibold text-on-surface">Phú Quốc:</span> 92 Trần Hưng Đạo, Dương Đông</li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[18px]">Dịch vụ &amp; Tiện ích</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Tour biển đảo cao cấp</a></li><li><a class="hover:text-primary transition-colors" href="#">Combo vé máy bay + Resort</a></li><li><a class="hover:text-primary transition-colors" href="#">Thuê xe du lịch &amp; Du thuyền</a></li><li><a class="hover:text-primary transition-colors" href="#">Bảo hiểm du lịch quốc tế</a></li><li><a class="hover:text-primary transition-colors" href="#">Tư vấn visa du lịch nhanh</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[18px]">Chứng nhận &amp; An toàn</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Giấy phép kinh doanh lữ hành quốc tế số: 79-888/2023/TCDL-GP LHQT</p><div class="space-y-space-sm"><div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-full text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span>Đã xác thực Bộ Công Thương</div><div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-full text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">security</span>Bảo mật thanh toán PCI-DSS</div></div><h5 class="font-label-md text-label-md text-on-surface mt-space-md mb-space-xs">Đối tác thanh toán</h5><div class="flex items-center gap-space-xs flex-wrap font-label-sm text-label-sm text-outline"><span class="px-2 py-1 bg-surface-container rounded">VNPAY</span><span class="px-2 py-1 bg-surface-container rounded">MoMo</span><span class="px-2 py-1 bg-surface-container rounded">Visa / Master</span><span class="px-2 py-1 bg-surface-container rounded">Napas</span></div></div></div><div class="mt-space-xl pt-space-lg border-t border-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-outline"><div>© 2024 DPV TourDuLich. Bản quyền thuộc về DPV Travel Tech Group.</div><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" href="#">Điều khoản sử dụng</a><a class="hover:text-primary transition-colors" href="#">Chính sách bảo mật</a><a class="hover:text-primary transition-colors" href="#">Quy chế hoạt động</a></div></div></div></footer></body></html>

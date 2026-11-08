@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Be Vietnam Pro',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'tertiary-fixed-dim': '#ffb68b', 'tertiary-fixed': '#ffdbc8', 'on-primary-fixed': '#001f26', 'tertiary': '#994700', 'on-error-container': '#93000a', 'surface-tint': '#006879', 'secondary-fixed': '#dae1ff', 'surface-dim': '#d1daf4', 'secondary-fixed-dim': '#b3c5ff', 'outline': '#6c797d', 'surface-variant': '#d9e2fc', 'inverse-primary': '#35d8f8', 'on-primary-container': '#004f5c', 'on-secondary-fixed-variant': '#003fa4', 'on-surface-variant': '#3c494d', 'on-secondary-container': '#f9f7ff', 'surface-container': '#e9edff', 'background': '#f9f9ff', 'on-error': '#ffffff', 'on-surface': '#121b2e', 'on-tertiary': '#ffffff', 'primary-container': '#00c7e6', 'surface': '#f9f9ff', 'primary': '#006879', 'on-tertiary-fixed': '#321200', 'surface-container-lowest': '#ffffff', 'on-tertiary-container': '#753500', 'primary-fixed': '#a9edff', 'outline-variant': '#bbc9cd', 'error': '#ba1a1a', 'primary-fixed-dim': '#35d8f8', 'secondary-container': '#0266ff', 'on-background': '#121b2e', 'on-secondary-fixed': '#001849', 'tertiary-container': '#ff9e60', 'inverse-on-surface': '#edf0ff', 'surface-container-low': '#f1f3ff', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-container-highest': '#d9e2fc', 'error-container': '#ffdad6', 'surface-container-high': '#e1e8ff', 'surface-bright': '#f9f9ff', 'inverse-surface': '#273044', 'on-primary-fixed-variant': '#004e5c', 'secondary': '#0050cc', 'on-tertiary-fixed-variant': '#753400' }, borderRadius: { 'DEFAULT': '1rem', 'lg': '2rem', 'xl': '3rem', 'full': '9999px' }, spacing: { 'space-lg': '1.5rem', 'space-md': '1rem', 'margin-mobile': '1rem', 'space-sm': '0.5rem', 'gutter': '1.5rem', 'gutter-mobile': '1rem', 'margin': '2rem', 'space-xs': '0.25rem', 'space-xl': '2.5rem' }, fontFamily: { 'body-sm': ['Be Vietnam Pro'], 'label-md': ['Be Vietnam Pro'], 'headline-md': ['Outfit'], 'body-md': ['Be Vietnam Pro'], 'display-lg': ['Outfit'], 'label-sm': ['Be Vietnam Pro'], 'label-lg': ['Be Vietnam Pro'], 'display-lg-mobile': ['Outfit'], 'headline-lg-mobile': ['Outfit'], 'body-lg': ['Be Vietnam Pro'], 'headline-sm': ['Outfit'], 'headline-lg': ['Outfit'] }, fontSize: { 'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'label-md': ['13px', { lineHeight: '18px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '0', fontWeight: '600' }], 'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }], 'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '700' }], 'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '600' }], 'label-lg': ['15px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', letterSpacing: '0', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }], 'headline-sm': ['20px', { lineHeight: '28px', letterSpacing: '0', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.01em', fontWeight: '600' }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Quay lại" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00C7E6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-7 w-auto object-contain flex-shrink-0 hidden sm:block" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><h1 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate tracking-tight">Báo Cáo Sự Cố Hiện Trường</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Hotline 1900 6868" class="h-9 px-3 rounded-full bg-error-container text-on-error-container font-label-md text-label-md flex items-center gap-1.5 hover:opacity-90 transition-opacity" href="tel:19006868"><span class="material-symbols-outlined text-[18px]">call</span><span class="hidden xs:inline">1900 6868</span><span class="font-bold uppercase tracking-wider text-[11px] bg-error text-on-error px-1.5 py-0.5 rounded-full">SOS</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full pb-28">
+<!-- Status Live GPS Banner -->
+<div class="px-gutter-mobile pt-3 pb-2">
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-md shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">GPS Live Vệ Tinh</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">SOP Mục 27</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>Mã: DPV-DEP-2026-HL01</span>
+<span>•</span>
+<span class="font-semibold text-tertiary">Ngày 2/3</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 leading-snug">
+          Tour Di Sản Vịnh Hạ Long 3N2Đ
+        </h2>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface font-medium truncate">Cảng Tuần Châu</p>
+<p class="text-[11px] text-outline truncate">20.932°N, 107.009°E</p>
+</div>
+</div>
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">groups</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface font-medium truncate">24 Khách • An toàn</p>
+<p class="text-[11px] text-outline truncate">HDV Tuấn Anh (#HL-88)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime Emergency Warning Notice -->
+<div class="px-gutter-mobile py-2">
+<div class="bg-error-container text-on-error-container rounded-DEFAULT p-space-md shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-label-lg text-label-lg font-bold uppercase tracking-tight text-error">Cảnh báo kích hoạt khẩn cấp</h3>
+<p class="font-body-sm text-body-sm mt-0.5 text-on-error-container/90 leading-relaxed">
+          Báo cáo sẽ kích hoạt tín hiệu đỏ trực tiếp trên màn hình Quản Lý Tổng và Trưởng Ban Điều Hành DPV tức thì.
+        </p>
+</div>
+</div>
+</div>
+<!-- SOP Incident Level Selector (1-touch Cards) -->
+<div class="px-gutter-mobile pt-3 pb-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Mức độ nghiêm trọng</span>
+<span class="font-label-sm text-label-sm text-outline">Chạm chọn 1 mức</span>
+</div>
+<div class="flex flex-col gap-2.5" id="severity-group">
+<!-- Level 1 (Selected by default) -->
+<button class="severity-card text-left p-space-md rounded-DEFAULT bg-error text-on-error shadow-md transition-all relative overflow-hidden flex items-start gap-3" onclick="selectSeverity(this, 'c1')" type="button">
+<div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px] text-on-error">crisis_alert</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold tracking-tight">Cấp 1: Báo Động Đỏ</span>
+<span class="px-2 py-0.5 rounded-full bg-white text-error font-label-sm text-label-sm font-bold shadow-sm">Đang chọn</span>
+</div>
+<p class="font-body-sm text-body-sm opacity-95 mt-1 leading-snug">
+            Cực kỳ nghiêm trọng: Thiên tai, cấm cảng, đe dọa tính mạng hoặc hủy cả hành trình.
+          </p>
+</div>
+</button>
+<!-- Level 2 -->
+<button class="severity-card text-left p-space-md rounded-DEFAULT bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-start gap-3" onclick="selectSeverity(this, 'c2')" type="button">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px] text-tertiary">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-tertiary">Cấp 2: Báo Động Vàng</span>
+<span class="font-label-sm text-label-sm text-outline">Mức TB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+            Chậm lịch trình &gt; 1 giờ, hỏng phương tiện cần xe/tàu thay thế.
+          </p>
+</div>
+</button>
+<!-- Level 3 -->
+<button class="severity-card text-left p-space-md rounded-DEFAULT bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-start gap-3" onclick="selectSeverity(this, 'c3')" type="button">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px] text-primary">info</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Cấp 3: Thông Thường</span>
+<span class="font-label-sm text-label-sm text-outline">Mức Nhẹ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+            Khách say sóng nhẹ, trễ giờ ăn uống, thay đổi nhỏ không ảnh hưởng an toàn.
+          </p>
+</div>
+</button>
+</div>
+</div>
+<!-- Incident Category Pills -->
+<div class="px-gutter-mobile pt-3 pb-2">
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-2">Phân loại sự cố</label>
+<div class="flex flex-wrap gap-2" id="category-pills">
+<button class="category-pill active flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" onclick="togglePill(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">thunderstorm</span>
+<span>Thời tiết / Cấm cảng</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm" onclick="togglePill(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-error">medical_services</span>
+<span>Y tế / Sức khỏe khách</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm" onclick="togglePill(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_boat</span>
+<span>Phương tiện di chuyển</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm" onclick="togglePill(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">restaurant</span>
+<span>Nhà hàng / Khách sạn</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm" onclick="togglePill(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+<span>Khác</span>
+</button>
+</div>
+</div>
+<!-- Incident Description -->
+<div class="px-gutter-mobile pt-3 pb-2">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-lg text-label-lg font-bold text-on-surface" for="desc-input">Mô tả hiện trường</label>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform" onclick="startVoiceInput()" type="button">
+<span class="material-symbols-outlined text-[15px]">mic</span>
+<span>Đọc ghi âm</span>
+</button>
+</div>
+<div class="relative bg-surface-container-lowest rounded-DEFAULT shadow-sm p-3 focus-within:shadow-md transition-shadow">
+<textarea class="w-full bg-transparent border-0 resize-none font-body-md text-body-md text-on-surface outline-none leading-relaxed" id="desc-input" placeholder="Mô tả tóm tắt sự cố, thời gian phát sinh và tình trạng du khách..." rows="4">Ban Quản lý Cảng Tuần Châu vừa phát lệnh cấm tàu rời bến đột xuất do giông lốc cục bộ cấp 7 tại vùng biển Hang Sửng Sốt từ 09:00 đến 12:00. Toàn bộ 24 du khách cùng thủy thủ đoàn đang an toàn tại bến Tuần Châu, tâm lý du khách ổn định.</textarea>
+<div class="flex items-center justify-between pt-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Đã đồng bộ GPS &amp; thời gian
+        </span>
+<span>186 ký tự</span>
+</div>
+</div>
+</div>
+<!-- Photo Evidence Proofs -->
+<div class="px-gutter-mobile pt-3 pb-2">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-lg text-label-lg font-bold text-on-surface">Bằng chứng hiện trường (2/5)</label>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tải lên tức thì</span>
+</div>
+<!-- Image preview carousel -->
+<div class="grid grid-cols-2 gap-3 mb-3">
+<!-- Evidence 1: Official Seal Notice -->
+<div class="relative bg-surface-container-lowest rounded-DEFAULT overflow-hidden shadow-sm aspect-video flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Official port emergency maritime suspension notice stamped with vibrant red seal issued by Tuan Chau Port authority with Vietnamese typography on clean white desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnMC__L00bCw-BbaMAqPUuZ3D2uN7Z-HRAxovQyHeJdRH4uR7J3kGefGllC51RUCZCr5WHzSvl8d9BZStLZOXISycD2Qs-GRXyWVwR7CI2QsEqYw6tbt30kxAYpqVTAynWTMF9JDiDAtXqdaLVGr-B6cFCE8dX0cu4DPJvNTOVwD1jTH5P7w0zjO1i3Vza-sx9jOJ1s_EMffPuCheFJE5mZh3AJpVDN5yhrYgyhoA6x5rg0nbI-7JBGA"/>
+<div class="relative z-10 p-2 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+<p class="font-label-sm text-label-sm font-semibold truncate">Công văn cấm tàu (Dấu đỏ)</p>
+<span class="text-[10px] opacity-80">09:12 AM • 1.4 MB</span>
+</div>
+</div>
+<!-- Evidence 2: Weather Storm Radar -->
+<div class="relative bg-surface-container-lowest rounded-DEFAULT overflow-hidden shadow-sm aspect-video flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Meteorological satellite storm radar map tracking heavy coastal squall and level seven gale gusts over Ha Long Bay ocean coordinates with vivid cyan and amber radar contours" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzGFw8sH0t56ekVQfMf8KVOJBqJeP_jh7qoNyGaTj3YmelDSqcFPV9dLAn9GnQ0tMUowxcK1Rm6slWmjZTU7-mLwWfC0TiPvFwOJH0rb3LFsDZrj14A4Wk943g0VipmOqIQ0x3iqdY4v7p6sxwg4VwgqyFy-Y6T-JfEzY5hOilaPDSJ5bQPF39p20ggxcBAP_0CzteipFTj_43sXbdcYKpSy4FJ9JSI4rMEu1B8sjhpNYFYClK6k7G9g"/>
+<div class="relative z-10 p-2 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+<p class="font-label-sm text-label-sm font-semibold truncate">Radar mây giông Cấp 7</p>
+<span class="text-[10px] opacity-80">09:15 AM • 890 KB</span>
+</div>
+</div>
+</div>
+<!-- Quick Snap Button (Target >= 48px) -->
+<button class="w-full h-14 rounded-DEFAULT bg-surface-container-high hover:bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-transform" type="button">
+<span class="material-symbols-outlined text-[24px] text-primary">add_a_photo</span>
+<span>📸 Chụp ảnh hiện trường ngay</span>
+</button>
+</div>
+<!-- Guide Proposed Resolution -->
+<div class="px-gutter-mobile pt-3 pb-3">
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-2" for="proposal-input">Đề xuất xử lý sơ bộ từ HDV</label>
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-sm p-3">
+<textarea class="w-full bg-transparent border-0 resize-none font-body-md text-body-md text-on-surface outline-none leading-relaxed" id="proposal-input" rows="3">Chuyển hoạt động tham quan hang động sáng nay sang Cooking Class và xem phim trên du thuyền; đề xuất đi bù Hang Sửng Sốt vào chiều khi lệnh cấm được gỡ.</textarea>
+<div class="flex items-center gap-1.5 pt-2 text-tertiary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+<span>Phòng điều hành sẽ xem xét &amp; phê duyệt kinh phí phát sinh nếu có</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Actions Bar -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-xl p-space-md shadow-[0_-4px_20px_rgba(0,0,0,0.06)] pb-safe flex flex-col gap-2">
+<button class="w-full h-14 rounded-full bg-error text-on-error font-label-lg text-label-lg font-bold flex items-center justify-center gap-2.5 shadow-lg active:scale-[0.98] transition-transform" onclick="submitReport()" type="button">
+<span class="material-symbols-outlined text-[22px]">e911_emergency</span>
+<span>🚨 GỬI BÁO CÁO KHẨN CẤP VỀ ĐIỀU HÀNH (SOP 27)</span>
+</button>
+<div class="flex items-center justify-between gap-3">
+<button class="flex-1 h-10 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">drafts</span>
+<span>Lưu bản nháp</span>
+</button>
+<a class="flex-1 h-10 rounded-full bg-error-container text-on-error-container font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm" href="tel:19006868">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>Gọi trực ban SOS</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  function selectSeverity(cardEl, level) {
+    const group = document.getElementById('severity-group');
+    const cards = group.querySelectorAll('.severity-card');
+    
+    cards.forEach(card => {
+      card.className = 'severity-card text-left p-space-md rounded-DEFAULT bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-start gap-3';
+      const badge = card.querySelector('span.rounded-full');
+      if (badge && badge.textContent.includes('Đang chọn')) {
+        badge.remove();
+      }
+    });
+
+    if (level === 'c1') {
+      cardEl.className = 'severity-card text-left p-space-md rounded-DEFAULT bg-error text-on-error shadow-md transition-all relative overflow-hidden flex items-start gap-3';
+      const titleDiv = cardEl.querySelector('.flex-1 > div');
+      if (!titleDiv.querySelector('.rounded-full')) {
+        const badge = document.createElement('span');
+        badge.className = 'px-2 py-0.5 rounded-full bg-white text-error font-label-sm text-label-sm font-bold shadow-sm';
+        badge.innerText = 'Đang chọn';
+        titleDiv.appendChild(badge);
+      }
+    } else if (level === 'c2') {
+      cardEl.className = 'severity-card text-left p-space-md rounded-DEFAULT bg-tertiary-container text-on-tertiary-container shadow-md transition-all relative overflow-hidden flex items-start gap-3';
+      const titleDiv = cardEl.querySelector('.flex-1 > div');
+      const badge = document.createElement('span');
+      badge.className = 'px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold shadow-sm';
+      badge.innerText = 'Đang chọn';
+      titleDiv.appendChild(badge);
+    } else {
+      cardEl.className = 'severity-card text-left p-space-md rounded-DEFAULT bg-surface-container-highest text-on-surface shadow-md transition-all relative overflow-hidden flex items-start gap-3';
+      const titleDiv = cardEl.querySelector('.flex-1 > div');
+      const badge = document.createElement('span');
+      badge.className = 'px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm';
+      badge.innerText = 'Đang chọn';
+      titleDiv.appendChild(badge);
+    }
+  }
+
+  function togglePill(pillEl) {
+    const isActive = pillEl.classList.contains('active');
+    if (isActive) {
+      pillEl.classList.remove('active', 'bg-secondary', 'text-on-secondary');
+      pillEl.classList.add('bg-surface-container-lowest', 'text-on-surface');
+    } else {
+      pillEl.classList.add('active', 'bg-secondary', 'text-on-secondary');
+      pillEl.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+    }
+  }
+
+  function startVoiceInput() {
+    const area = document.getElementById('desc-input');
+    area.value += ' [Đang ghi nhận bổ sung giọng nói...]';
+  }
+
+  function submitReport() {
+    if (confirm('Xác nhận kích hoạt tín hiệu khẩn cấp Báo Động Đỏ tới Trưởng Ban Điều Hành DPV?')) {
+      alert('Đã phát tín hiệu SOP-27 thành công. Trung tâm Điều Hành đang kết nối trực tiếp.');
+    }
+  }
+</script></main></body></html>

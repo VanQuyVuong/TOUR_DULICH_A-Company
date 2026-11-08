@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#d1daf4", "error": "#ba1a1a", "surface": "#f9f9ff", "primary-fixed-dim": "#35d8f8", "on-tertiary-fixed-variant": "#753400", "on-primary": "#ffffff", "secondary-fixed-dim": "#b3c5ff", "on-surface": "#121b2e", "on-tertiary": "#ffffff", "on-secondary-container": "#f9f7ff", "primary-container": "#00c7e6", "outline-variant": "#bbc9cd", "tertiary": "#994700", "on-primary-container": "#004f5c", "secondary-container": "#0266ff", "on-tertiary-fixed": "#321200", "surface-container": "#e9edff", "surface-tint": "#006879", "inverse-on-surface": "#edf0ff", "inverse-surface": "#273044", "surface-container-highest": "#d9e2fc", "surface-container-low": "#f1f3ff", "on-surface-variant": "#3c494d", "surface-variant": "#d9e2fc", "secondary-fixed": "#dae1ff", "surface-container-high": "#e1e8ff", "error-container": "#ffdad6", "on-error-container": "#93000a", "outline": "#6c797d", "tertiary-fixed": "#ffdbc8", "surface-container-lowest": "#ffffff", "background": "#f9f9ff", "tertiary-container": "#ff9e60", "on-primary-fixed": "#001f26", "surface-bright": "#f9f9ff", "on-secondary-fixed": "#001849", "primary-fixed": "#a9edff", "on-secondary-fixed-variant": "#003fa4", "on-tertiary-container": "#753500", "primary": "#006879", "tertiary-fixed-dim": "#ffb68b", "on-background": "#121b2e", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-primary-fixed-variant": "#004e5c", "inverse-primary": "#35d8f8", "secondary": "#0050cc" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-sm": "0.5rem", "margin": "2rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "label-sm": [ "Be Vietnam Pro" ], "label-md": [ "Be Vietnam Pro" ], "headline-lg": [ "Outfit" ], "headline-md": [ "Outfit" ], "display-lg": [ "Outfit" ], "body-sm": [ "Be Vietnam Pro" ], "display-lg-mobile": [ "Outfit" ], "headline-lg-mobile": [ "Outfit" ], "body-lg": [ "Be Vietnam Pro" ], "body-md": [ "Be Vietnam Pro" ], "headline-sm": [ "Outfit" ], "label-lg": [ "Be Vietnam Pro" ] }, "fontSize": { "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600" } ], "label-lg": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-xs"><img alt="Modern professional travel tech logo for DPV TourDuLich. Minimalist vector emblem featuring stylized letters DPV forming an dynamic origami compass / soaring travel wing with ocean blue #0066FF and cyan accent #00C7E6 gradient, clean lines, white background friendly, premium travel platform brand identity.. Design context: - Primary color: #00c7e6
+- Font: spaceGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfvFrjfYm0KbQ5UzlsQ_Wh3W3Wu609Rcn8c6qEm-JNKxaiKeKA8e5pEKj8HcLSWpMV_OpgkUIHZOLjKGkq6IOgFjgR5EgOpMeapxlb4KnGWHiVCCUMXws0lIDWC3L0McW3InFzahN9KI_nbxcqXdbPyx2SUCuY5BKjpCKGnr1n24p_qagDjFoo14bQsMonvUXEeVPbTZcSpvIkhDoQIQWDn3i0EiH36ea0uQxflgK--JvuI__F3zvXi6E"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-secondary leading-tight tracking-tight">DPV Tour</span><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">TourDuLich Ops</span></div></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">CORE</span></div><nav class="px-space-sm py-space-sm space-y-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-label-md rounded-DEFAULT"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-outline tracking-wider">Tổng Quan Hệ Thống</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-dieu-hanh" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard Điều Hành</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-san-pham-tour" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span>Quản Lý Sản Phẩm Tour</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-dot-khoi-hanh" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Quản Lý Đợt Khởi Hành</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-outline tracking-wider">Vận Hành &amp; Điều Phối</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="phan-cong-huong-dan-vien" href="#"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Phân Công Hướng Dẫn Viên</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-yeu-cau-tour-rieng" href="#"><span class="material-symbols-outlined text-[20px]">flight_takeoff</span><span>Quản Lý Tour Riêng</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="xu-ly-su-co-doan" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Xử Lý Sự Cố Đoàn</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-outline tracking-wider">Báo Cáo &amp; Dữ Liệu</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="booking-va-doanh-thu" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Booking &amp; Doanh Thu</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nhat-ky-van-hanh" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>Nhật Ký Vận Hành</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-DEFAULT font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cai-dat-he-thong" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Cài Đặt Hệ Thống</span></a></div></div></nav></div><div class="p-space-sm bg-surface-container-low"><div class="px-space-sm py-space-xs mb-space-xs rounded-DEFAULT bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Hệ Thống Trực Tuyến</span></div><span class="font-label-sm text-label-sm text-primary font-bold">HN HQ</span></div><div class="p-space-xs rounded-DEFAULT bg-surface-container-lowest flex items-center gap-space-xs shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Lê Thị Lan Anh</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Trưởng Khối Điều Hành</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full w-80 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Tìm mã tour, departure, HDV..." type="text"/><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant">Ctrl+K</kbd></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low"><span class="material-symbols-outlined text-secondary text-[18px]">domain</span><span class="font-label-md text-label-md text-on-surface font-medium">Hà Nội HQ &amp; VP Đà Nẵng</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-space-xs bg-secondary hover:bg-primary-container text-on-secondary hover:text-on-primary-container px-space-md py-2 rounded-full font-label-md text-label-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>+ Mở Bán Đợt Mới</span></button><button class="relative p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">chat</span></button><button class="relative p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="hidden md:inline font-label-md text-label-md text-on-surface font-medium">Lan Anh (Manager)</span><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-space-lg min-h-screen"><div class="flex flex-col w-full pb-margin">
+<!-- Top Command & Breadcrumb Header -->
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<a class="hover:text-primary transition-colors" href="#">Điều Hành Tour</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Quản Lý Đợt Khởi Hành</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Quản Lý Đợt Khởi Hành (Departures &amp; Manifest)</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold tracking-wide uppercase">Real-time Ops</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Giám sát, phân bổ ghế, giá vé thực tế và điều phối Hướng dẫn viên cho từng đợt chạy cụ thể theo chuẩn Tour ≠ Đợt khởi hành.
+      </p>
+</div>
+<!-- Global CTA Buttons -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+<span>Xuất danh sách (Excel)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>+ Mở bán Đợt Khởi Hành Mới</span>
+</button>
+</div>
+</div>
+<!-- Operational KPI Metrics (5 Bento Metric Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm mb-space-lg">
+<!-- KPI 1 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Tổng Đợt Tháng Này</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">calendar_view_week</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-[32px] leading-tight text-on-surface font-bold">48 <span class="font-label-md text-label-md font-normal text-on-surface-variant">đợt</span></div>
+<div class="mt-space-xs flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>28 Nội địa • 20 Quốc tế</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Đang Chạy Thực Tế</span>
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[18px]">directions_bus</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-[32px] leading-tight text-secondary font-bold">12 <span class="font-label-md text-label-md font-normal text-on-surface-variant">đợt</span></div>
+<div class="mt-space-xs flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span>364 khách ngoài hiện trường</span>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Khởi Hành &lt; 48 Giờ</span>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">alarm</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-[32px] leading-tight text-on-surface font-bold">06 <span class="font-label-md text-label-md font-normal text-on-surface-variant">đợt</span></div>
+<div class="mt-space-xs flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>Chốt danh sách &amp; bảo hiểm</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Tỷ Lệ Lấp Đầy Chỗ</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">pie_chart</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-[32px] leading-tight text-on-surface font-bold">88.4%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+3.2% vs tuần trước</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>1.120 / 1.268 ghế đã bán</span>
+</div>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-error">Cảnh Báo Thiếu HDV</span>
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-[32px] leading-tight text-error font-bold">02 <span class="font-label-md text-label-md font-normal text-error">đợt</span></div>
+<div class="mt-space-xs flex items-center gap-1.5 font-label-sm text-label-sm text-error font-medium">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>Gán HDV chính trước 24h!</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Filter Toolbar -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm mb-space-md flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- Search Field -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-2 rounded-full min-w-[280px] shadow-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">search</span>
+<input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Tìm mã đợt (DPV-DEP...), tên tour..." type="text"/>
+</div>
+<!-- Tour Source Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-2 rounded-full shadow-sm text-on-surface cursor-pointer hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-outline text-[18px]">travel_explore</span>
+<span class="font-label-md text-label-md">Tour Gốc: Tất Cả Tuyến</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+<!-- Date Window Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-2 rounded-full shadow-sm text-on-surface cursor-pointer hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-secondary text-[18px]">date_range</span>
+<span class="font-label-md text-label-md font-medium">Khoảng ngày: 7 ngày tới (14/11 - 21/11)</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-2 rounded-full shadow-sm text-on-surface cursor-pointer hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-outline text-[18px]">tune</span>
+<span class="font-label-md text-label-md">Trạng thái: Mở bán &amp; Đang chạy</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+</div>
+<!-- Toggle & Secondary Action -->
+<div class="flex items-center gap-space-md shrink-0">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<div class="relative">
+<input class="sr-only peer" id="filter-no-guide" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant peer-checked:text-secondary">Chỉ hiện đợt chưa có HDV</span>
+</label>
+<div class="h-6 w-px bg-surface-container-highest"></div>
+<button class="p-2 rounded-full text-outline hover:text-on-surface hover:bg-surface-container transition-all" title="Làm mới dữ liệu" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+<button class="p-2 rounded-full text-outline hover:text-on-surface hover:bg-surface-container transition-all" title="Bộ lọc nâng cao" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_alt</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace: Data Table + Quick View Drawer Split Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Departure Data Table Section (Col 8.5) -->
+<div class="xl:col-span-8 flex flex-col bg-surface-container-lowest rounded-DEFAULT shadow-sm overflow-hidden">
+<!-- Table Top Meta -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Danh Sách Đợt Khởi Hành Đang Hoạt Động</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold">48 đợt</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Sắp xếp theo:</span>
+<button class="font-semibold text-secondary flex items-center gap-0.5 hover:underline">
+            Ngày khởi hành gần nhất <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider select-none">
+<th class="py-space-sm pl-space-md pr-space-xs w-12 text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-space-sm px-space-sm">Mã Đợt &amp; Tour Gốc</th>
+<th class="py-space-sm px-space-sm">Thời Gian Lộ Trình</th>
+<th class="py-space-sm px-space-sm min-w-[150px]">Chỗ &amp; Tỷ Lệ Lấp Đầy</th>
+<th class="py-space-sm px-space-sm">Giá Bán Thực Tế</th>
+<th class="py-space-sm px-space-sm">Hướng Dẫn Viên</th>
+<th class="py-space-sm px-space-sm">Trạng Thái</th>
+<th class="py-space-sm pr-space-md text-right">Thao Tác</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Selected active item (Connected to Quick View) -->
+<tr class="bg-secondary-fixed/30 hover:bg-secondary-fixed/50 transition-colors cursor-pointer group">
+<td class="py-space-sm pl-space-md pr-space-xs text-center">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shrink-0 shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Breathtaking panoramic view of Ha Long Bay limestone karsts rising out of emerald green water with luxury cruising yacht in soft golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHQ8Tu-6IlFqovcT1WQ1s0X3E3o1TCWOwiSZt8yAvB38voz7G7GCf3jTG6AUwCCzCXCWKT-w1b_X07Q56LMMsL-CI3a9nde4H8rCg5p26FyMWA3J2gyN6te6tmmYI-cUBf52pcbmqrofOmfM-kSQrzc4DAhcDCt7MFSOCffmYnJwuMOn3GFhrruZD_2XMgDJn8o8_JrqH1f5blTtGKh356mGyCZdoMTnAp-K1dBEnYBeMecWbzUyg1JQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-secondary font-bold">DPV-DEP-2026-HL01</span>
+<span class="px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] uppercase font-bold">Du Thuyền</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate max-w-[220px]">Di Sản Vịnh Hạ Long - Du Thuyền 5 Sao Signature</span>
+<span class="font-label-sm text-label-sm text-outline">Tour Gốc: DPV-TO-HL5S</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">15/11 - 17/11/2026</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span>3 Ngày 2 Đêm</span>
+</div>
+<span class="text-secondary font-label-sm text-[10px] font-bold mt-0.5">Khởi hành sau 18 giờ</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">24/28 chỗ</span>
+<span class="text-primary font-bold">86%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 86%"></div>
+</div>
+<span class="font-label-sm text-[11px] text-error font-medium">Còn lại 4 ghế trống</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">3.490.000 đ</span>
+<span class="font-label-sm text-label-sm text-outline">Trẻ em: 2.690.000 đ</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Net 2.85M</span>
+<span class="text-primary font-label-sm text-[10px] font-bold">+18.3%</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-[10px] font-bold">TA</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Nguyễn Tuấn Anh</span>
+<span class="px-1 py-0.2 rounded bg-surface-container-high text-secondary font-label-sm text-[9px] font-bold">CHÍNH</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant pl-7 font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[12px]">person_outline</span>
+<span class="truncate">Lê Thu Thảo (Phụ)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  Mở Bán
+                </span>
+</td>
+<td class="py-space-sm pr-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-secondary" title="Xem chi tiết" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant" title="Phân công HDV" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline" title="Tác vụ thêm" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Ongoing Tour with full seats -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shrink-0 shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Misty morning in Sapa terrace rice paddies with Fansipan peak mountain cable car in serene morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpjyVBS875kczrwqRg0w3K9bLZsET5Wif4uqn_JjAets1_DEPj06juVf2yRbkM5MtEjghfNpaUgkpp8Wq4vuHkijJjk6-0a0xq9ynz-ImO_6Yc1X8MiWFEfzD0apxJwtKblgeGGnN55-o1QwEqmgJOQ0XbBFpUygORF7BrmzupVEe3cPZp6GAoFugDv5seaUxH0CnBJOel3b7-XB4OMDvQqDW5pYXwTzo9zXc--fQcmnd_Sg9j64OUDQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-secondary font-bold">DPV-DEP-2026-SP04</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] uppercase font-bold">Leo Núi</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate max-w-[220px]">Sapa - Fansipan - Bản Cát Cát Trải Nghiệm Mùa Vàng</span>
+<span class="font-label-sm text-label-sm text-outline">Tour Gốc: DPV-TO-SP3N</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">14/11 - 16/11/2026</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span>3 Ngày 2 Đêm</span>
+</div>
+<span class="text-primary font-label-sm text-[10px] font-bold mt-0.5">Ngày 2/3 - Đang leo Fansipan</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">20/20 chỗ</span>
+<span class="text-secondary font-bold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Đầy đủ 100% khách</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">2.890.000 đ</span>
+<span class="font-label-sm text-label-sm text-outline">Trẻ em: 2.190.000 đ</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Net 2.30M</span>
+<span class="text-primary font-label-sm text-[10px] font-bold">+20.4%</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[10px] font-bold">ĐH</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Đoàn Văn Hậu</span>
+<span class="px-1 py-0.2 rounded bg-surface-container-high text-secondary font-label-sm text-[9px] font-bold">CHÍNH</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant pl-7 font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[12px]">person_outline</span>
+<span class="truncate">Trần Đình Trọng (Phụ)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                  Đang Chạy
+                </span>
+</td>
+<td class="py-space-sm pr-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-secondary" title="Xem chi tiết" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant" title="Phân công HDV" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline" title="Tác vụ thêm" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Warning Missing Guide (Cảnh báo thiếu HDV) -->
+<tr class="hover:bg-error-container/20 transition-colors cursor-pointer bg-error-container/10">
+<td class="py-space-sm pl-space-md pr-space-xs text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shrink-0 shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Da Nang Golden Bridge held up by giant stone hands in cloudy blue sky with Ba Na Hills French village in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVmOK_H2L7E9_1Uzg1lfKE_ysrGWTTwHLbxquJr949wNzFGoyzvLJEeNKTiSFCQeiXymSnleG_sVjV7TCvHUCPYoi2i6Lidq3xKdILXv0ibKbhraWVStIiOGgReOUnhSolhu4ssSveD3P5f2yk_B9IqL0BbtVg-4gc8Yiip1staOc-AKaXNY0Nt4k5PeJDaoRiHH8vL48dp0MDD267xU2kksrLZHggcuDDB4aLS351VHqRFfgDKWGHMw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-error font-bold">DPV-DEP-2026-DN08</span>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] uppercase font-bold">Cần Gán HDV</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate max-w-[220px]">Đà Nẵng - Hội An - Bà Nà Hills Cầu Vàng VIP</span>
+<span class="font-label-sm text-label-sm text-outline">Tour Gốc: DPV-TO-DNA4N</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">16/11 - 19/11/2026</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span>4 Ngày 3 Đêm</span>
+</div>
+<span class="text-error font-label-sm text-[10px] font-bold mt-0.5">Khởi hành sau 36 giờ</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">32/35 chỗ</span>
+<span class="text-primary font-bold">91%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 91%"></div>
+</div>
+<span class="font-label-sm text-[11px] text-error font-medium">Còn 3 ghế cuối</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">4.250.000 đ</span>
+<span class="font-label-sm text-label-sm text-outline">Trẻ em: 3.190.000 đ</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Net 3.40M</span>
+<span class="text-primary font-label-sm text-[10px] font-bold">+20.0%</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+<button class="px-2 py-1 rounded-full bg-error text-on-error font-label-sm text-[11px] font-bold hover:bg-on-error-container transition-all">
+                      + Gán HDV Ngay
+                    </button>
+</div>
+<span class="text-error font-label-sm text-[10px]">Chưa có HDV Chính/Phụ</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                  Gần Kín Chỗ
+                </span>
+</td>
+<td class="py-space-sm pr-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-error" title="Xem chi tiết" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-error" title="Phân công HDV khẩn cấp" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline" title="Tác vụ thêm" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Sold Out & Chốt Sổ -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shrink-0 shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Pristine white sand beach and tropical turquoise lagoon in Phu Quoc Vietnam with coconut palm trees in midday sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1t8FAqcEfCxpkIoPYi_JkKOF-YiTQdYRh-N3PhQZAtSxVeGUztdudXyfTjM_AlmwDBdajMKt9_GFJxKwWE-_RIOHCpCxom7jwd_s2DiceEa5sKYAtsl4AQMoZKr6a5bF2aJZQXgi3jwma6iwk93sJzK11r5P6RhBUlbFSYLnyUX2fYfn-RK8WaZYbcLN-mRWHh64IlbjGE3UrhyKYUwKnSZ3aaAJSNGw4b5tk8qAhdKRZpQT2UiITRA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-secondary font-bold">DPV-DEP-2026-PQ12</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] uppercase font-bold">Biển Đảo</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate max-w-[220px]">Phú Quốc Nghỉ Dưỡng Grand World - Cáp Treo Hòn Thơm</span>
+<span class="font-label-sm text-label-sm text-outline">Tour Gốc: DPV-TO-PQ4N</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">17/11 - 20/11/2026</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span>4 Ngày 3 Đêm</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-[10px]">Khởi hành sau 3 ngày</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">30/30 chỗ</span>
+<span class="text-secondary font-bold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-sm text-[11px] text-outline font-semibold">Đã khóa ghế mở bán</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">5.190.000 đ</span>
+<span class="font-label-sm text-label-sm text-outline">Trẻ em: 3.990.000 đ</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Net 4.10M</span>
+<span class="text-primary font-label-sm text-[10px] font-bold">+21.0%</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-[10px] font-bold">VT</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Võ Hoài Thương</span>
+<span class="px-1 py-0.2 rounded bg-surface-container-high text-secondary font-label-sm text-[9px] font-bold">CHÍNH</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant pl-7 font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[12px]">person_outline</span>
+<span class="truncate">Trương Quốc Hùng (Phụ)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                  Đã Chốt Sổ
+                </span>
+</td>
+<td class="py-space-sm pr-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-secondary" title="Xem chi tiết" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant" title="Phân công HDV" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline" title="Tác vụ thêm" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: International Tour Open -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shrink-0 shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Traditional Japanese pagoda with Mount Fuji in snow background framed by autumn red maple leaves in brilliant sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8R-aXBg0e2qeOaNX_CRtN_z7-6QGO08yzIwzKZR9k9ioRZVXgDrntWuvxTnmOVa7gNMHezLSZGITU7oHkaBBBnrW8WOOtBeZXPe6JRpZM3_Zk3AoLqjWLfS2N4C8-yLGI10s_Z1ZrDMquYytk80fBPVrfhGxBAC8rCcsnYWMYSPf1IBmfOyt08qMhfFOrXfQ2GHl6Kp3K8n-peEts5o4Dlr3RE0nsbrJlco4AJERLxK0nGFHlW7ulUg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-secondary font-bold">DPV-DEP-2026-JP02</span>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] uppercase font-bold">Quốc Tế VIP</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate max-w-[220px]">Nhật Bản: Tokyo - Núi Phú Sỹ - Kyoto Mùa Thu Lá Đỏ</span>
+<span class="font-label-sm text-label-sm text-outline">Tour Gốc: DPV-TO-JPN6N</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">22/11 - 27/11/2026</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span>6 Ngày 5 Đêm</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-[10px]">Khởi hành sau 8 ngày</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">18/25 chỗ</span>
+<span class="text-primary font-bold">72%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 72%"></div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Còn 7 chỗ (Đang xét visa)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">36.900.000 đ</span>
+<span class="font-label-sm text-label-sm text-outline">Trẻ em: 31.500.000 đ</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Net 31.0M</span>
+<span class="text-primary font-label-sm text-[10px] font-bold">+15.9%</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-[10px] font-bold">HM</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Hoàng Minh Trí</span>
+<span class="px-1 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[9px] font-bold">OUTBOUND</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant pl-7 font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[12px]">badge</span>
+<span class="truncate">HDV Local: Kenji Sato</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  Mở Bán
+                </span>
+</td>
+<td class="py-space-sm pr-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-secondary" title="Xem chi tiết" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant" title="Phân công HDV" type="button">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline" title="Tác vụ thêm" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Finished Tour -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer opacity-80">
+<td class="py-space-sm pl-space-md pr-space-xs text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 focus:outline-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT overflow-hidden shrink-0 shadow-sm bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Ancient Hue Imperial Citadel gate reflected in lotus pond under sunny clear blue sky with historic Vietnamese architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYeTJnv9gS4bQ3oSTsQuuMqDBXHbgNO2FZWGunguAzKIuuOzJVOhYochzkZdNAR-lSEwokORoMs4-XeuHNYNulGJGBGsBABCuUBAAZMFfznEZUTxRAPlDWy97RlkDfh_D4BThdg6rfEk48ucwUI0ruDUm29puwxM5mILzKOh4ISUNf3ZtakQ97i5aHfTXthmnwGtMyiw6IaJ7wIJnpq2qkYcNOQgTkzBTYvF2e7lvcsOl-fiMPq4YdQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-outline font-bold">DPV-DEP-2026-HUE03</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-outline font-label-sm text-[10px] uppercase font-bold">Văn Hóa</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate max-w-[220px]">Di Tích Cố Đô Huế - Ca Huế Trên Sông Hương Đêm Rằm</span>
+<span class="font-label-sm text-label-sm text-outline">Tour Gốc: DPV-TO-HUE3N</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">08/11 - 10/11/2026</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">event_available</span>
+<span>3 Ngày 2 Đêm</span>
+</div>
+<span class="text-outline font-label-sm text-[10px]">Đã kết thúc an toàn</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">25/25 chỗ</span>
+<span class="text-outline font-bold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">Quyết toán hoàn tất</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">2.450.000 đ</span>
+<span class="font-label-sm text-label-sm text-outline">Trẻ em: 1.850.000 đ</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Net 1.95M</span>
+<span class="text-primary font-label-sm text-[10px] font-bold">+20.4%</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-variant text-on-surface flex items-center justify-center font-label-sm text-[10px] font-bold">PL</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Phan Linh</span>
+<span class="px-1 py-0.2 rounded bg-surface-container-high text-outline font-label-sm text-[9px] font-bold">CHÍNH</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant pl-7 font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[12px]">rate_review</span>
+<span class="truncate text-secondary">Đánh giá: 4.9/5★</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Đã Hoàn Thành
+                </span>
+</td>
+<td class="py-space-sm pr-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-secondary" title="Xem báo cáo kết thúc" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-outline" title="Tác vụ thêm" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Bottom Pagination & Batch Controls -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hiển thị <strong class="text-on-surface">1 - 6</strong> trong tổng số <strong class="text-on-surface">48</strong> đợt khởi hành</span>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">Số dòng:</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-DEFAULT px-2 py-1 outline-none shadow-sm border-0">
+<option>6 đợt / trang</option>
+<option>12 đợt / trang</option>
+<option>24 đợt / trang</option>
+</select>
+</div>
+</div>
+<!-- Pagination Pager Buttons -->
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-full text-outline hover:text-on-surface hover:bg-surface-container disabled:opacity-30" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center justify-center shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-full text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm font-semibold flex items-center justify-center" type="button">2</button>
+<button class="w-8 h-8 rounded-full text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm font-semibold flex items-center justify-center" type="button">3</button>
+<span class="text-outline font-label-sm px-1">…</span>
+<button class="w-8 h-8 rounded-full text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm font-semibold flex items-center justify-center" type="button">8</button>
+<button class="p-1.5 rounded-full text-outline hover:text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick View / Departure Manifest Drawer (Col 3.5 Right Pane) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Manifest Card -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<!-- Quick View Header -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">MỞ BÁN</span>
+<span class="font-label-sm text-label-sm text-outline">Tóm tắt đợt được chọn</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 leading-tight">DPV-DEP-2026-HL01</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vịnh Hạ Long 5★ • 15/11/2026 (3N2Đ)</span>
+</div>
+<button class="p-1 rounded-full text-outline hover:text-on-surface hover:bg-surface-container" title="Mở toàn màn hình">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</button>
+</div>
+<!-- Progress and Seat Capacity Visual Meter -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Tình trạng giữ chỗ (Manifest)</span>
+<span class="text-secondary font-bold">24 / 28 Ghế (86%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 72%" title="20 Vé Đã Thanh Toán"></div>
+<div class="bg-primary-container h-full" style="width: 14%" title="4 Vé Giữ Chỗ Tạm (Deposit)"></div>
+<div class="bg-transparent h-full" style="width: 14%" title="4 Chỗ Còn Trống"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-[11px] text-on-surface-variant mt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> 20 Đã trả 100%</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container"></span> 4 Đặt cọc</span>
+<span class="flex items-center gap-1 text-error font-semibold"><span class="w-2 h-2 rounded-full bg-surface-container-high"></span> 4 Còn trống</span>
+</div>
+</div>
+<!-- Guide & Operational Crew -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-outline">Đội Ngũ Điều Phối Hiện Trường</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold">+ Thay đổi</button>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Main Guide Card -->
+<div class="p-2 rounded-DEFAULT bg-surface-container-low flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-sm shrink-0">
+                TA
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase">HDV Chính (Tiếng Anh)</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Nguyễn Tuấn Anh</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">0912.888.765</span>
+</div>
+</div>
+<!-- Assistant Guide Card -->
+<div class="p-2 rounded-DEFAULT bg-surface-container-low flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">
+                TT
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-primary font-bold uppercase">HDV Phụ / Hậu Cần</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Lê Thu Thảo</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">0987.332.119</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pre-departure Readiness Checklist -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-outline">Checklist Sẵn Sàng Khởi Hành (48h)</span>
+<div class="space-y-1.5 font-label-md text-label-md">
+<div class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="text-on-surface font-medium">Bảo hiểm du lịch Bảo Việt</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">24/24 Khách</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="text-on-surface font-medium">Xe đón trả 29 chỗ (Hà Nội • Tuần Châu)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BKS 29B-678.90</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">pending</span>
+<span class="text-on-surface font-medium">Thực đơn ăn kiêng &amp; Dị ứng</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">2 Khách chay</span>
+</div>
+</div>
+</div>
+<!-- Realtime Destination Weather & Alert Widget -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[24px] text-primary">sunny</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Thời tiết Vịnh Hạ Long</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">26°C • Biển êm, sóng cấp 1</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Tốt</span>
+</div>
+<!-- Action Manifest CTA Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-space-sm rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-variant transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>In Manifest</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-space-sm rounded-full bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-primary-container hover:text-on-primary-container shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Bàn Giao Tour</span>
+</button>
+</div>
+</div>
+<!-- Quick Tips Card for Operations Manager -->
+<div class="p-space-md rounded-DEFAULT bg-secondary-container text-on-secondary-container shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px] shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md font-bold text-white">Chính Sách Chốt Ghế Tự Động (Auto-Lock)</span>
+<p class="font-body-sm text-body-sm text-secondary-fixed opacity-90 leading-relaxed">
+            Hệ thống sẽ tự động chuyển trạng thái đợt sang <strong>Đã Chốt Sổ</strong> trước giờ lăn bánh 24 giờ để đồng bộ danh sách với bảo hiểm và cảng vụ.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
